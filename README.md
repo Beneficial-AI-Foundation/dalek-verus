@@ -25,7 +25,5 @@ This repo is based on the `signal-curve25519-4.1.3` tag of https://github.com/si
 - commented out unit tests
 - removed most CI workflows
 
-It contains Verus proofs for a selection of functions. See these links for more information: 
-- General overview: https://beneficial-ai-foundation.github.io/dalek-lite/index.html
-- Proved function specifications: https://beneficial-ai-foundation.github.io/dalek-lite/specs.html
+It contains Verus proofs for a selection of functions. All Verus code is in [src](https://github.com/Beneficial-AI-Foundation/dalek-verus/tree/main/curve25519-dalek/src).
 
