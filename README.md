@@ -1,3 +1,9 @@
+<div align="center">
+
+[![VeriLib Certified](https://img.shields.io/badge/VeriLib-Certified-2e7d32)](https://verilib.org/cert/5050)
+
+</div>
+
 <p align="center">
 <img
  alt="dalek-cryptography logo: a dalek with edwards curves as sparkles coming out of its radar-schnozzley blaster thingies"
