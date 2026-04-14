@@ -168,7 +168,7 @@ Formal verification targets version 4.1.3 of the curve25519-dalek crate -- the v
 - `probe:curve25519-dalek/4.1.3/traits/EdwardsPoint#IsIdentity<bool>#is_identity()`
 - `probe:curve25519-dalek/4.1.3/traits/MontgomeryPoint#IsIdentity<bool>#is_identity()`
 
-## 2. Trusted public API functions (10)
+## 2. Trusted public API functions (14)
 
 - `probe:curve25519-dalek/4.1.3/edwards/CompressedEdwardsY#Debug<&core::fmt::Formatter<'_>>#fmt()` (external)
 - `probe:curve25519-dalek/4.1.3/edwards/EdwardsBasepointTable#Clone#clone()` (external)
@@ -180,6 +180,10 @@ Formal verification targets version 4.1.3 of the curve25519-dalek crate -- the v
 - `probe:curve25519-dalek/4.1.3/ristretto/RistrettoPoint<&R>#random()` (external)
 - `probe:curve25519-dalek/4.1.3/ristretto/RistrettoPoint<I>#sum_original()` (external)
 - `probe:curve25519-dalek/4.1.3/scalar/Scalar#Debug<&core::fmt::Formatter<'_>>#fmt()` (external)
+- `probe:curve25519-dalek/4.1.3/scalar/deserialize()` (external)
+- `probe:curve25519-dalek/4.1.3/scalar/expecting()` (external)
+- `probe:curve25519-dalek/4.1.3/scalar/serialize()` (external)
+- `probe:curve25519-dalek/4.1.3/scalar/visit_seq()` (external)
 
 ## 3. Trust base
 
@@ -236,12 +240,13 @@ Functions using `admit()` — the solver accepts the proof without checking.
 - `probe:curve25519-dalek/4.1.3/torsion_lemmas/edwards_lemmas/lemmas/axiom_four_torsion_affine()`
 - `probe:curve25519-dalek/4.1.3/window_specs/specs/axiom_affine_odd_multiples_of_basepoint_valid()`
 
-### 3b. External functions assumed correct w.r.t. their specs (77)
+### 3b. External functions assumed correct w.r.t. their specs (82)
 
 - `probe:core/https://github.com/rust-lang/rust/library/core/array/Hash#hash()` (assumed spec)
 - `probe:curve25519-dalek/4.1.3/core_assumes/bytes32_8_to_24()` (external)
 - `probe:curve25519-dalek/4.1.3/core_assumes/compressed_edwards_y_from_array_result()` (external)
 - `probe:curve25519-dalek/4.1.3/core_assumes/compressed_ristretto_from_array_result()` (external)
+- `probe:curve25519-dalek/4.1.3/core_assumes/fill_bytes()` (external)
 - `probe:curve25519-dalek/4.1.3/core_assumes/first_32_bytes()` (external)
 - `probe:curve25519-dalek/4.1.3/core_assumes/last_32_bytes()` (external)
 - `probe:curve25519-dalek/4.1.3/core_assumes/negate_field()` (external)
@@ -283,6 +288,10 @@ Functions using `admit()` — the solver accepts the proof without checking.
 - `probe:curve25519-dalek/4.1.3/ristretto/RistrettoPoint<&Vec<FieldElement>>#batch_invert_vec()` (external)
 - `probe:curve25519-dalek/4.1.3/ristretto/RistrettoPoint<I>#sum_original()` (external)
 - `probe:curve25519-dalek/4.1.3/scalar/Scalar#Debug<&core::fmt::Formatter<'_>>#fmt()` (external)
+- `probe:curve25519-dalek/4.1.3/scalar/deserialize()` (external)
+- `probe:curve25519-dalek/4.1.3/scalar/expecting()` (external)
+- `probe:curve25519-dalek/4.1.3/scalar/serialize()` (external)
+- `probe:curve25519-dalek/4.1.3/scalar/visit_seq()` (external)
 - `probe:curve25519-dalek/4.1.3/subtle_assumes/u64/serial/backend/choice_and()` (external)
 - `probe:curve25519-dalek/4.1.3/subtle_assumes/u64/serial/backend/choice_into()` (external)
 - `probe:curve25519-dalek/4.1.3/subtle_assumes/u64/serial/backend/choice_not()` (external)
@@ -456,7 +465,7 @@ Functions using `admit()` — the solver accepts the proof without checking.
 - `probe:curve25519-dalek/4.1.3/window/NafLookupTable8<AffineNielsPoint>#From<&EdwardsPoint>#from()`
 - `probe:curve25519-dalek/4.1.3/window/NafLookupTable8<ProjectiveNielsPoint>#From<&EdwardsPoint>#from()`
 
-## 6. Verified lemmas (810)
+## 6. Verified lemmas (814)
 
 - `probe:curve25519-dalek/4.1.3/add_lemmas/field_lemmas/lemmas/lemma_add_bounds_propagate()`
 - `probe:curve25519-dalek/4.1.3/add_lemmas/field_lemmas/lemmas/lemma_edwards_point_weaken_to_54()`
@@ -739,6 +748,10 @@ Functions using `admit()` — the solver accepts the proof without checking.
 - `probe:curve25519-dalek/4.1.3/invert_lemmas/field_lemmas/lemmas/lemma_pow2k_to_field_element()`
 - `probe:curve25519-dalek/4.1.3/iterator_specs/specs/lemma_sum_ristretto_edwards_equiv()`
 - `probe:curve25519-dalek/4.1.3/jacobi_quartic/lizard/lemma_elligator_inv_spec_anchor()`
+- `probe:curve25519-dalek/4.1.3/lemmas/common_lemmas/bit_lemmas/lemma_mask_bound_implies_bit_clean()`
+- `probe:curve25519-dalek/4.1.3/lemmas/common_lemmas/bit_lemmas/lemma_mask_or_bound()`
+- `probe:curve25519-dalek/4.1.3/lemmas/common_lemmas/bit_lemmas/lemma_or_bit()`
+- `probe:curve25519-dalek/4.1.3/lemmas/common_lemmas/bit_lemmas/lemma_or_bit_all()`
 - `probe:curve25519-dalek/4.1.3/limbs_to_bytes_lemmas/field_lemmas/lemmas/lemma_5_bytes_reconstruct()`
 - `probe:curve25519-dalek/4.1.3/limbs_to_bytes_lemmas/field_lemmas/lemmas/lemma_5_bytes_scale()`
 - `probe:curve25519-dalek/4.1.3/limbs_to_bytes_lemmas/field_lemmas/lemmas/lemma_6_bytes_reconstruct()`
@@ -1269,7 +1282,7 @@ Functions using `admit()` — the solver accepts the proof without checking.
 - `probe:curve25519-dalek/4.1.3/vartime_double_base_lemmas/edwards_lemmas/lemmas/lemma_vartime_double_base_col_a()`
 - `probe:curve25519-dalek/4.1.3/vartime_double_base_lemmas/edwards_lemmas/lemmas/lemma_vartime_double_base_col_ab()`
 
-## 7. Out-of-scope public API functions (27)
+## 7. Out-of-scope public API functions (80)
 
 Public API functions that Verus did not process.
 
@@ -1278,6 +1291,30 @@ Public API functions that Verus did not process.
 - `probe:curve25519-dalek/4.1.3/edwards/EdwardsPoint<&[u8]>#nonspec_map_to_curve()` (cfg-gated)
 - `probe:curve25519-dalek/4.1.3/edwards/VartimeEdwardsPrecomputation#VartimePrecomputedMultiscalarMul<I>#new()` (cfg-gated)
 - `probe:curve25519-dalek/4.1.3/edwards/VartimeEdwardsPrecomputation#VartimePrecomputedMultiscalarMul<I>#optional_mixed_multiscalar_mul()` (cfg-gated)
+- `probe:curve25519-dalek/4.1.3/edwards/add()` (cfg-gated)
+- `probe:curve25519-dalek/4.1.3/edwards/add_assign()` (cfg-gated)
+- `probe:curve25519-dalek/4.1.3/edwards/clear_cofactor()` (cfg-gated)
+- `probe:curve25519-dalek/4.1.3/edwards/deserialize()` (cfg-gated)
+- `probe:curve25519-dalek/4.1.3/edwards/double()` (cfg-gated)
+- `probe:curve25519-dalek/4.1.3/edwards/expecting()` (cfg-gated)
+- `probe:curve25519-dalek/4.1.3/edwards/from()` (cfg-gated)
+- `probe:curve25519-dalek/4.1.3/edwards/from_bytes()` (cfg-gated)
+- `probe:curve25519-dalek/4.1.3/edwards/from_bytes_unchecked()` (cfg-gated)
+- `probe:curve25519-dalek/4.1.3/edwards/generator()` (cfg-gated)
+- `probe:curve25519-dalek/4.1.3/edwards/identity()` (cfg-gated)
+- `probe:curve25519-dalek/4.1.3/edwards/into_subgroup()` (cfg-gated)
+- `probe:curve25519-dalek/4.1.3/edwards/is_identity()` (cfg-gated)
+- `probe:curve25519-dalek/4.1.3/edwards/is_torsion_free()` (cfg-gated)
+- `probe:curve25519-dalek/4.1.3/edwards/mul()` (cfg-gated)
+- `probe:curve25519-dalek/4.1.3/edwards/mul_assign()` (cfg-gated)
+- `probe:curve25519-dalek/4.1.3/edwards/neg()` (cfg-gated)
+- `probe:curve25519-dalek/4.1.3/edwards/random()` (cfg-gated)
+- `probe:curve25519-dalek/4.1.3/edwards/serialize()` (cfg-gated)
+- `probe:curve25519-dalek/4.1.3/edwards/sub()` (cfg-gated)
+- `probe:curve25519-dalek/4.1.3/edwards/sub_assign()` (cfg-gated)
+- `probe:curve25519-dalek/4.1.3/edwards/sum()` (cfg-gated)
+- `probe:curve25519-dalek/4.1.3/edwards/to_bytes()` (cfg-gated)
+- `probe:curve25519-dalek/4.1.3/edwards/visit_seq()` (cfg-gated)
 - `probe:curve25519-dalek/4.1.3/lizard_ristretto/lizard/&RistrettoPoint#RistrettoPoint<Option<[u8;/16]>
 where
 ////D:/Digest/+/Digest<OutputSize/=/U32>,>#lizard_decode()` (cfg-gated)
@@ -1290,9 +1327,38 @@ where
 - `probe:curve25519-dalek/4.1.3/ristretto/RistrettoPoint<I>#double_and_compress_batch()` (cfg-gated)
 - `probe:curve25519-dalek/4.1.3/ristretto/VartimeRistrettoPrecomputation#VartimePrecomputedMultiscalarMul<I>#new()` (cfg-gated)
 - `probe:curve25519-dalek/4.1.3/ristretto/VartimeRistrettoPrecomputation#VartimePrecomputedMultiscalarMul<I>#optional_mixed_multiscalar_mul()` (cfg-gated)
+- `probe:curve25519-dalek/4.1.3/ristretto/clear_cofactor()` (cfg-gated)
+- `probe:curve25519-dalek/4.1.3/ristretto/deserialize()` (cfg-gated)
+- `probe:curve25519-dalek/4.1.3/ristretto/double()` (cfg-gated)
+- `probe:curve25519-dalek/4.1.3/ristretto/expecting()` (cfg-gated)
+- `probe:curve25519-dalek/4.1.3/ristretto/from_bytes()` (cfg-gated)
+- `probe:curve25519-dalek/4.1.3/ristretto/from_bytes_unchecked()` (cfg-gated)
+- `probe:curve25519-dalek/4.1.3/ristretto/generator()` (cfg-gated)
+- `probe:curve25519-dalek/4.1.3/ristretto/identity()` (cfg-gated)
+- `probe:curve25519-dalek/4.1.3/ristretto/into_subgroup()` (cfg-gated)
+- `probe:curve25519-dalek/4.1.3/ristretto/is_identity()` (cfg-gated)
+- `probe:curve25519-dalek/4.1.3/ristretto/is_torsion_free()` (cfg-gated)
+- `probe:curve25519-dalek/4.1.3/ristretto/random()` (cfg-gated)
+- `probe:curve25519-dalek/4.1.3/ristretto/serialize()` (cfg-gated)
+- `probe:curve25519-dalek/4.1.3/ristretto/to_bytes()` (cfg-gated)
+- `probe:curve25519-dalek/4.1.3/ristretto/visit_seq()` (cfg-gated)
 - `probe:curve25519-dalek/4.1.3/scalar/Scalar#ConditionallySelectable<&Self>#conditional_select()` (other)
 - `probe:curve25519-dalek/4.1.3/scalar/Scalar<&[u8]>#hash_from_bytes()` (cfg-gated)
 - `probe:curve25519-dalek/4.1.3/scalar/Scalar<D>#from_hash()` (cfg-gated)
+- `probe:curve25519-dalek/4.1.3/scalar/char_le_bits()` (cfg-gated)
+- `probe:curve25519-dalek/4.1.3/scalar/double()` (cfg-gated)
+- `probe:curve25519-dalek/4.1.3/scalar/from_bits()` (cfg-gated)
+- `probe:curve25519-dalek/4.1.3/scalar/from_repr()` (cfg-gated)
+- `probe:curve25519-dalek/4.1.3/scalar/from_repr_vartime()` (cfg-gated)
+- `probe:curve25519-dalek/4.1.3/scalar/from_uniform_bytes()` (cfg-gated)
+- `probe:curve25519-dalek/4.1.3/scalar/invert()` (cfg-gated)
+- `probe:curve25519-dalek/4.1.3/scalar/is_odd()` (cfg-gated)
+- `probe:curve25519-dalek/4.1.3/scalar/random()` (cfg-gated)
+- `probe:curve25519-dalek/4.1.3/scalar/sqrt()` (cfg-gated)
+- `probe:curve25519-dalek/4.1.3/scalar/sqrt_ratio()` (cfg-gated)
+- `probe:curve25519-dalek/4.1.3/scalar/square()` (cfg-gated)
+- `probe:curve25519-dalek/4.1.3/scalar/to_le_bits()` (cfg-gated)
+- `probe:curve25519-dalek/4.1.3/scalar/to_repr()` (cfg-gated)
 - `probe:curve25519-dalek/4.1.3/traits/&Self#BasepointTable<[u8;/32]>#mul_base_clamped()` (other)
 - `probe:curve25519-dalek/4.1.3/traits/&Self#VartimePrecomputedMultiscalarMul<I>#vartime_mixed_multiscalar_mul()` (other)
 - `probe:curve25519-dalek/4.1.3/traits/&Self#VartimePrecomputedMultiscalarMul<I>#vartime_multiscalar_mul()` (other)
@@ -1312,6 +1378,6 @@ where
 | Category | Count |
 |----------|------:|
 | Verified public API | 149 |
-| Trusted public API | 10 |
-| Out-of-scope public API | 27 |
-| **Total public API** | **186** |
+| Trusted public API | 14 |
+| Out-of-scope public API | 80 |
+| **Total public API** | **243** |
