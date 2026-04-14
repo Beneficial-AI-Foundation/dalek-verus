@@ -3,17 +3,17 @@
   "schema-version": "2.0",
   "tool": {
     "name": "probe-verus",
-    "version": "6.6.0",
+    "version": "6.9.1",
     "command": "specify"
   },
   "source": {
     "repo": "https://github.com/Beneficial-AI-Foundation/dalek-verus.git",
-    "commit": "9474d8d1680f558dfdb6e14a5d179287563b7a11",
+    "commit": "6bd88b5c90c83ad03c0eddc201105faa4787942d",
     "language": "rust",
     "package": "curve25519-dalek",
     "package-version": "4.1.3"
   },
-  "timestamp": "2026-04-09T09:32:08Z",
+  "timestamp": "2026-04-14T09:21:20Z",
   "data": {
     "probe:curve25519-dalek/4.1.3/DalekBits#Display<&Formatter<'_>>#fmt()": {
       "code-path": "curve25519-dalek/build.rs",
@@ -3914,6 +3914,26 @@
         "is_some",
         "unwrap"
       ]
+    },
+    "probe:curve25519-dalek/4.1.3/backend/serial/u64/subtle_assumes/ct_eq()": {
+      "code-path": "curve25519-dalek/src/backend/serial/u64/subtle_assumes.rs",
+      "spec-text": {
+        "lines-start": 31,
+        "lines-end": 31
+      },
+      "kind": "exec",
+      "context": "trait",
+      "specified": false,
+      "has_requires": false,
+      "has_ensures": false,
+      "has_decreases": false,
+      "has_trusted_assumption": false,
+      "contains_admit": false,
+      "is_external_body": false,
+      "is_external": false,
+      "has_body": false,
+      "is_cfg": false,
+      "has_no_decreases_attr": false
     },
     "probe:curve25519-dalek/4.1.3/backend/straus_multiscalar_mul()": {
       "code-path": "curve25519-dalek/src/backend/mod.rs",
@@ -9925,6 +9945,36 @@
         "is_ok",
         "unwrap",
         "unwrap"
+      ]
+    },
+    "probe:curve25519-dalek/4.1.3/core_assumes/fill_bytes()": {
+      "code-path": "curve25519-dalek/src/core_assumes.rs",
+      "spec-text": {
+        "lines-start": 430,
+        "lines-end": 440
+      },
+      "kind": "exec",
+      "context": "standalone",
+      "specified": true,
+      "has_requires": false,
+      "has_ensures": true,
+      "has_decreases": false,
+      "has_trusted_assumption": false,
+      "contains_admit": false,
+      "is_external_body": true,
+      "is_external": false,
+      "has_body": true,
+      "is_cfg": true,
+      "has_no_decreases_attr": false,
+      "ensures_text": "ensures\n        is_uniform_bytes(bytes),",
+      "ensures-calls": [
+        "is_uniform_bytes"
+      ],
+      "ensures-calls-full": [
+        "is_uniform_bytes"
+      ],
+      "ensures-fn-calls": [
+        "is_uniform_bytes"
       ]
     },
     "probe:curve25519-dalek/4.1.3/core_assumes/first_32_bytes()": {
@@ -18619,6 +18669,46 @@
       "is_cfg": true,
       "has_no_decreases_attr": false
     },
+    "probe:curve25519-dalek/4.1.3/edwards/add()": {
+      "code-path": "curve25519-dalek/src/edwards.rs",
+      "spec-text": {
+        "lines-start": 4055,
+        "lines-end": 4057
+      },
+      "kind": "exec",
+      "context": "impl",
+      "specified": false,
+      "has_requires": false,
+      "has_ensures": false,
+      "has_decreases": false,
+      "has_trusted_assumption": false,
+      "contains_admit": false,
+      "is_external_body": false,
+      "is_external": false,
+      "has_body": true,
+      "is_cfg": true,
+      "has_no_decreases_attr": false
+    },
+    "probe:curve25519-dalek/4.1.3/edwards/add_assign()": {
+      "code-path": "curve25519-dalek/src/edwards.rs",
+      "spec-text": {
+        "lines-start": 4084,
+        "lines-end": 4086
+      },
+      "kind": "exec",
+      "context": "impl",
+      "specified": false,
+      "has_requires": false,
+      "has_ensures": false,
+      "has_decreases": false,
+      "has_trusted_assumption": false,
+      "contains_admit": false,
+      "is_external_body": false,
+      "is_external": false,
+      "has_body": true,
+      "is_cfg": true,
+      "has_no_decreases_attr": false
+    },
     "probe:curve25519-dalek/4.1.3/edwards/add_req()": {
       "code-path": "curve25519-dalek/src/edwards.rs",
       "spec-text": {
@@ -18646,6 +18736,306 @@
         "lines-end": 2029
       },
       "kind": "spec",
+      "context": "impl",
+      "specified": false,
+      "has_requires": false,
+      "has_ensures": false,
+      "has_decreases": false,
+      "has_trusted_assumption": false,
+      "contains_admit": false,
+      "is_external_body": false,
+      "is_external": false,
+      "has_body": true,
+      "is_cfg": true,
+      "has_no_decreases_attr": false
+    },
+    "probe:curve25519-dalek/4.1.3/edwards/clear_cofactor()": {
+      "code-path": "curve25519-dalek/src/edwards.rs",
+      "spec-text": {
+        "lines-start": 4270,
+        "lines-end": 4272
+      },
+      "kind": "exec",
+      "context": "impl",
+      "specified": false,
+      "has_requires": false,
+      "has_ensures": false,
+      "has_decreases": false,
+      "has_trusted_assumption": false,
+      "contains_admit": false,
+      "is_external_body": false,
+      "is_external": false,
+      "has_body": true,
+      "is_cfg": true,
+      "has_no_decreases_attr": false
+    },
+    "probe:curve25519-dalek/4.1.3/edwards/deserialize()": {
+      "code-path": "curve25519-dalek/src/edwards.rs",
+      "spec-text": {
+        "lines-start": 717,
+        "lines-end": 748
+      },
+      "kind": "exec",
+      "context": "impl",
+      "specified": false,
+      "has_requires": false,
+      "has_ensures": false,
+      "has_decreases": false,
+      "has_trusted_assumption": false,
+      "contains_admit": false,
+      "is_external_body": false,
+      "is_external": false,
+      "has_body": true,
+      "is_cfg": true,
+      "has_no_decreases_attr": false
+    },
+    "probe:curve25519-dalek/4.1.3/edwards/double()": {
+      "code-path": "curve25519-dalek/src/edwards.rs",
+      "spec-text": {
+        "lines-start": 4005,
+        "lines-end": 4007
+      },
+      "kind": "exec",
+      "context": "impl",
+      "specified": false,
+      "has_requires": false,
+      "has_ensures": false,
+      "has_decreases": false,
+      "has_trusted_assumption": false,
+      "contains_admit": false,
+      "is_external_body": false,
+      "is_external": false,
+      "has_body": true,
+      "is_cfg": true,
+      "has_no_decreases_attr": false
+    },
+    "probe:curve25519-dalek/4.1.3/edwards/expecting()": {
+      "code-path": "curve25519-dalek/src/edwards.rs",
+      "spec-text": {
+        "lines-start": 726,
+        "lines-end": 728
+      },
+      "kind": "exec",
+      "context": "impl",
+      "specified": false,
+      "has_requires": false,
+      "has_ensures": false,
+      "has_decreases": false,
+      "has_trusted_assumption": false,
+      "contains_admit": false,
+      "is_external_body": false,
+      "is_external": false,
+      "has_body": true,
+      "is_cfg": true,
+      "has_no_decreases_attr": false
+    },
+    "probe:curve25519-dalek/4.1.3/edwards/from()": {
+      "code-path": "curve25519-dalek/src/edwards.rs",
+      "spec-text": {
+        "lines-start": 4038,
+        "lines-end": 4040
+      },
+      "kind": "exec",
+      "context": "impl",
+      "specified": false,
+      "has_requires": false,
+      "has_ensures": false,
+      "has_decreases": false,
+      "has_trusted_assumption": false,
+      "contains_admit": false,
+      "is_external_body": false,
+      "is_external": false,
+      "has_body": true,
+      "is_cfg": true,
+      "has_no_decreases_attr": false
+    },
+    "probe:curve25519-dalek/4.1.3/edwards/from_bytes()": {
+      "code-path": "curve25519-dalek/src/edwards.rs",
+      "spec-text": {
+        "lines-start": 4014,
+        "lines-end": 4018
+      },
+      "kind": "exec",
+      "context": "impl",
+      "specified": false,
+      "has_requires": false,
+      "has_ensures": false,
+      "has_decreases": false,
+      "has_trusted_assumption": false,
+      "contains_admit": false,
+      "is_external_body": false,
+      "is_external": false,
+      "has_body": true,
+      "is_cfg": true,
+      "has_no_decreases_attr": false
+    },
+    "probe:curve25519-dalek/4.1.3/edwards/from_bytes_unchecked()": {
+      "code-path": "curve25519-dalek/src/edwards.rs",
+      "spec-text": {
+        "lines-start": 4020,
+        "lines-end": 4023
+      },
+      "kind": "exec",
+      "context": "impl",
+      "specified": false,
+      "has_requires": false,
+      "has_ensures": false,
+      "has_decreases": false,
+      "has_trusted_assumption": false,
+      "contains_admit": false,
+      "is_external_body": false,
+      "is_external": false,
+      "has_body": true,
+      "is_cfg": true,
+      "has_no_decreases_attr": false
+    },
+    "probe:curve25519-dalek/4.1.3/edwards/generator()": {
+      "code-path": "curve25519-dalek/src/edwards.rs",
+      "spec-text": {
+        "lines-start": 3997,
+        "lines-end": 3999
+      },
+      "kind": "exec",
+      "context": "impl",
+      "specified": false,
+      "has_requires": false,
+      "has_ensures": false,
+      "has_decreases": false,
+      "has_trusted_assumption": false,
+      "contains_admit": false,
+      "is_external_body": false,
+      "is_external": false,
+      "has_body": true,
+      "is_cfg": true,
+      "has_no_decreases_attr": false
+    },
+    "probe:curve25519-dalek/4.1.3/edwards/identity()": {
+      "code-path": "curve25519-dalek/src/edwards.rs",
+      "spec-text": {
+        "lines-start": 3993,
+        "lines-end": 3995
+      },
+      "kind": "exec",
+      "context": "impl",
+      "specified": false,
+      "has_requires": false,
+      "has_ensures": false,
+      "has_decreases": false,
+      "has_trusted_assumption": false,
+      "contains_admit": false,
+      "is_external_body": false,
+      "is_external": false,
+      "has_body": true,
+      "is_cfg": true,
+      "has_no_decreases_attr": false
+    },
+    "probe:curve25519-dalek/4.1.3/edwards/into_subgroup()": {
+      "code-path": "curve25519-dalek/src/edwards.rs",
+      "spec-text": {
+        "lines-start": 4274,
+        "lines-end": 4276
+      },
+      "kind": "exec",
+      "context": "impl",
+      "specified": false,
+      "has_requires": false,
+      "has_ensures": false,
+      "has_decreases": false,
+      "has_trusted_assumption": false,
+      "contains_admit": false,
+      "is_external_body": false,
+      "is_external": false,
+      "has_body": true,
+      "is_cfg": true,
+      "has_no_decreases_attr": false
+    },
+    "probe:curve25519-dalek/4.1.3/edwards/is_identity()": {
+      "code-path": "curve25519-dalek/src/edwards.rs",
+      "spec-text": {
+        "lines-start": 4001,
+        "lines-end": 4003
+      },
+      "kind": "exec",
+      "context": "impl",
+      "specified": false,
+      "has_requires": false,
+      "has_ensures": false,
+      "has_decreases": false,
+      "has_trusted_assumption": false,
+      "contains_admit": false,
+      "is_external_body": false,
+      "is_external": false,
+      "has_body": true,
+      "is_cfg": true,
+      "has_no_decreases_attr": false
+    },
+    "probe:curve25519-dalek/4.1.3/edwards/is_torsion_free()": {
+      "code-path": "curve25519-dalek/src/edwards.rs",
+      "spec-text": {
+        "lines-start": 4278,
+        "lines-end": 4280
+      },
+      "kind": "exec",
+      "context": "impl",
+      "specified": false,
+      "has_requires": false,
+      "has_ensures": false,
+      "has_decreases": false,
+      "has_trusted_assumption": false,
+      "contains_admit": false,
+      "is_external_body": false,
+      "is_external": false,
+      "has_body": true,
+      "is_cfg": true,
+      "has_no_decreases_attr": false
+    },
+    "probe:curve25519-dalek/4.1.3/edwards/mul()": {
+      "code-path": "curve25519-dalek/src/edwards.rs",
+      "spec-text": {
+        "lines-start": 4170,
+        "lines-end": 4176
+      },
+      "kind": "exec",
+      "context": "impl",
+      "specified": false,
+      "has_requires": false,
+      "has_ensures": false,
+      "has_decreases": false,
+      "has_trusted_assumption": false,
+      "contains_admit": false,
+      "is_external_body": false,
+      "is_external": false,
+      "has_body": true,
+      "is_cfg": true,
+      "has_no_decreases_attr": false
+    },
+    "probe:curve25519-dalek/4.1.3/edwards/mul_assign()": {
+      "code-path": "curve25519-dalek/src/edwards.rs",
+      "spec-text": {
+        "lines-start": 4200,
+        "lines-end": 4202
+      },
+      "kind": "exec",
+      "context": "impl",
+      "specified": false,
+      "has_requires": false,
+      "has_ensures": false,
+      "has_decreases": false,
+      "has_trusted_assumption": false,
+      "contains_admit": false,
+      "is_external_body": false,
+      "is_external": false,
+      "has_body": true,
+      "is_cfg": true,
+      "has_no_decreases_attr": false
+    },
+    "probe:curve25519-dalek/4.1.3/edwards/neg()": {
+      "code-path": "curve25519-dalek/src/edwards.rs",
+      "spec-text": {
+        "lines-start": 4047,
+        "lines-end": 4049
+      },
+      "kind": "exec",
       "context": "impl",
       "specified": false,
       "has_requires": false,
@@ -18759,6 +19149,86 @@
       "is_cfg": true,
       "has_no_decreases_attr": false
     },
+    "probe:curve25519-dalek/4.1.3/edwards/random()": {
+      "code-path": "curve25519-dalek/src/edwards.rs",
+      "spec-text": {
+        "lines-start": 3981,
+        "lines-end": 3991
+      },
+      "kind": "exec",
+      "context": "impl",
+      "specified": false,
+      "has_requires": false,
+      "has_ensures": false,
+      "has_decreases": false,
+      "has_trusted_assumption": false,
+      "contains_admit": false,
+      "is_external_body": false,
+      "is_external": false,
+      "has_body": true,
+      "is_cfg": true,
+      "has_no_decreases_attr": false
+    },
+    "probe:curve25519-dalek/4.1.3/edwards/serialize()": {
+      "code-path": "curve25519-dalek/src/edwards.rs",
+      "spec-text": {
+        "lines-start": 687,
+        "lines-end": 697
+      },
+      "kind": "exec",
+      "context": "impl",
+      "specified": false,
+      "has_requires": false,
+      "has_ensures": false,
+      "has_decreases": false,
+      "has_trusted_assumption": false,
+      "contains_admit": false,
+      "is_external_body": false,
+      "is_external": false,
+      "has_body": true,
+      "is_cfg": true,
+      "has_no_decreases_attr": false
+    },
+    "probe:curve25519-dalek/4.1.3/edwards/sub()": {
+      "code-path": "curve25519-dalek/src/edwards.rs",
+      "spec-text": {
+        "lines-start": 4105,
+        "lines-end": 4107
+      },
+      "kind": "exec",
+      "context": "impl",
+      "specified": false,
+      "has_requires": false,
+      "has_ensures": false,
+      "has_decreases": false,
+      "has_trusted_assumption": false,
+      "contains_admit": false,
+      "is_external_body": false,
+      "is_external": false,
+      "has_body": true,
+      "is_cfg": true,
+      "has_no_decreases_attr": false
+    },
+    "probe:curve25519-dalek/4.1.3/edwards/sub_assign()": {
+      "code-path": "curve25519-dalek/src/edwards.rs",
+      "spec-text": {
+        "lines-start": 4134,
+        "lines-end": 4136
+      },
+      "kind": "exec",
+      "context": "impl",
+      "specified": false,
+      "has_requires": false,
+      "has_ensures": false,
+      "has_decreases": false,
+      "has_trusted_assumption": false,
+      "contains_admit": false,
+      "is_external_body": false,
+      "is_external": false,
+      "has_body": true,
+      "is_cfg": true,
+      "has_no_decreases_attr": false
+    },
     "probe:curve25519-dalek/4.1.3/edwards/sub_req()": {
       "code-path": "curve25519-dalek/src/edwards.rs",
       "spec-text": {
@@ -18786,6 +19256,86 @@
         "lines-end": 2156
       },
       "kind": "spec",
+      "context": "impl",
+      "specified": false,
+      "has_requires": false,
+      "has_ensures": false,
+      "has_decreases": false,
+      "has_trusted_assumption": false,
+      "contains_admit": false,
+      "is_external_body": false,
+      "is_external": false,
+      "has_body": true,
+      "is_cfg": true,
+      "has_no_decreases_attr": false
+    },
+    "probe:curve25519-dalek/4.1.3/edwards/sum()": {
+      "code-path": "curve25519-dalek/src/edwards.rs",
+      "spec-text": {
+        "lines-start": 4157,
+        "lines-end": 4163
+      },
+      "kind": "exec",
+      "context": "impl",
+      "specified": false,
+      "has_requires": false,
+      "has_ensures": false,
+      "has_decreases": false,
+      "has_trusted_assumption": false,
+      "contains_admit": false,
+      "is_external_body": false,
+      "is_external": false,
+      "has_body": true,
+      "is_cfg": true,
+      "has_no_decreases_attr": false
+    },
+    "probe:curve25519-dalek/4.1.3/edwards/to_bytes()": {
+      "code-path": "curve25519-dalek/src/edwards.rs",
+      "spec-text": {
+        "lines-start": 4025,
+        "lines-end": 4027
+      },
+      "kind": "exec",
+      "context": "impl",
+      "specified": false,
+      "has_requires": false,
+      "has_ensures": false,
+      "has_decreases": false,
+      "has_trusted_assumption": false,
+      "contains_admit": false,
+      "is_external_body": false,
+      "is_external": false,
+      "has_body": true,
+      "is_cfg": true,
+      "has_no_decreases_attr": false
+    },
+    "probe:curve25519-dalek/4.1.3/edwards/verus_equivalence_random_sum()": {
+      "code-path": "curve25519-dalek/src/edwards.rs",
+      "spec-text": {
+        "lines-start": 4291,
+        "lines-end": 4321
+      },
+      "kind": "exec",
+      "context": "standalone",
+      "specified": false,
+      "has_requires": false,
+      "has_ensures": false,
+      "has_decreases": false,
+      "has_trusted_assumption": false,
+      "contains_admit": false,
+      "is_external_body": false,
+      "is_external": false,
+      "has_body": true,
+      "is_cfg": true,
+      "has_no_decreases_attr": false
+    },
+    "probe:curve25519-dalek/4.1.3/edwards/visit_seq()": {
+      "code-path": "curve25519-dalek/src/edwards.rs",
+      "spec-text": {
+        "lines-start": 730,
+        "lines-end": 744
+      },
+      "kind": "exec",
       "context": "impl",
       "specified": false,
       "has_requires": false,
@@ -29693,6 +30243,114 @@
         "is_sqrt_ratio"
       ]
     },
+    "probe:curve25519-dalek/4.1.3/lemmas/common_lemmas/bit_lemmas/lemma_mask_bound_implies_bit_clean()": {
+      "code-path": "curve25519-dalek/src/lemmas/common_lemmas/bit_lemmas.rs",
+      "spec-text": {
+        "lines-start": 160,
+        "lines-end": 177
+      },
+      "kind": "proof",
+      "context": "standalone",
+      "specified": true,
+      "has_requires": true,
+      "has_ensures": true,
+      "has_decreases": false,
+      "has_trusted_assumption": false,
+      "contains_admit": false,
+      "is_external_body": false,
+      "is_external": false,
+      "has_body": true,
+      "is_cfg": false,
+      "has_no_decreases_attr": false,
+      "requires_text": "requires\n        bound_shift <= 8,\n        j < 8,\n        j >= bound_shift,\n        (mask as u16) < (1u16 << (bound_shift as u16)),",
+      "ensures_text": "ensures\n        (mask & (1u8 << j)) == 0,"
+    },
+    "probe:curve25519-dalek/4.1.3/lemmas/common_lemmas/bit_lemmas/lemma_mask_or_bound()": {
+      "code-path": "curve25519-dalek/src/lemmas/common_lemmas/bit_lemmas.rs",
+      "spec-text": {
+        "lines-start": 179,
+        "lines-end": 195
+      },
+      "kind": "proof",
+      "context": "standalone",
+      "specified": true,
+      "has_requires": true,
+      "has_ensures": true,
+      "has_decreases": false,
+      "has_trusted_assumption": false,
+      "contains_admit": false,
+      "is_external_body": false,
+      "is_external": false,
+      "has_body": true,
+      "is_cfg": false,
+      "has_no_decreases_attr": false,
+      "requires_text": "requires\n        pos < 8,\n        val == 0 || val == 1,\n        (mask as u16) < (1u16 << (pos as u16)),",
+      "ensures_text": "ensures\n        ((mask | (val << pos)) as u16) < (1u16 << ((pos + 1) as u16)),"
+    },
+    "probe:curve25519-dalek/4.1.3/lemmas/common_lemmas/bit_lemmas/lemma_or_bit()": {
+      "code-path": "curve25519-dalek/src/lemmas/common_lemmas/bit_lemmas.rs",
+      "spec-text": {
+        "lines-start": 127,
+        "lines-end": 158
+      },
+      "kind": "proof",
+      "context": "standalone",
+      "specified": true,
+      "has_requires": true,
+      "has_ensures": true,
+      "has_decreases": false,
+      "has_trusted_assumption": false,
+      "contains_admit": false,
+      "is_external_body": false,
+      "is_external": false,
+      "has_body": true,
+      "is_cfg": false,
+      "has_no_decreases_attr": false,
+      "requires_text": "requires\n        pos < 8,\n        j < 8,\n        val == 0 || val == 1,",
+      "ensures_text": "ensures\n        j != pos ==> ((mask | (val << pos)) & (1u8 << j)) == (mask & (1u8 << j)),\n        j == pos ==> (((mask | (val << pos)) & (1u8 << j)) != 0) == ((mask & (1u8 << j)) != 0 || val\n            == 1u8),"
+    },
+    "probe:curve25519-dalek/4.1.3/lemmas/common_lemmas/bit_lemmas/lemma_or_bit_all()": {
+      "code-path": "curve25519-dalek/src/lemmas/common_lemmas/bit_lemmas.rs",
+      "spec-text": {
+        "lines-start": 197,
+        "lines-end": 217
+      },
+      "kind": "proof",
+      "context": "standalone",
+      "specified": true,
+      "has_requires": true,
+      "has_ensures": true,
+      "has_decreases": false,
+      "has_trusted_assumption": false,
+      "contains_admit": false,
+      "is_external_body": false,
+      "is_external": false,
+      "has_body": true,
+      "is_cfg": false,
+      "has_no_decreases_attr": false,
+      "requires_text": "requires\n        pos < 8,\n        val == 0 || val == 1,",
+      "ensures_text": "ensures\n        forall|j: u8|\n            #![auto]\n            j < 8 ==> (j != pos ==> ((mask | (val << pos)) & (1u8 << j)) == (mask & (1u8 << j)))\n                && (j == pos ==> (((mask | (val << pos)) & (1u8 << j)) != 0) == ((mask & (1u8 << j))\n                != 0 || val == 1u8)),"
+    },
+    "probe:curve25519-dalek/4.1.3/lemmas/common_lemmas/bit_lemmas/mask_bit()": {
+      "code-path": "curve25519-dalek/src/lemmas/common_lemmas/bit_lemmas.rs",
+      "spec-text": {
+        "lines-start": 122,
+        "lines-end": 125
+      },
+      "kind": "spec",
+      "context": "standalone",
+      "specified": false,
+      "has_requires": false,
+      "has_ensures": false,
+      "has_decreases": false,
+      "has_trusted_assumption": false,
+      "contains_admit": false,
+      "is_external_body": false,
+      "is_external": false,
+      "has_body": true,
+      "is_cfg": false,
+      "has_no_decreases_attr": false
+    },
     "probe:curve25519-dalek/4.1.3/limbs_to_bytes_lemmas/field_lemmas/lemmas/bytes_match_limbs_packing()": {
       "code-path": "curve25519-dalek/src/lemmas/field_lemmas/limbs_to_bytes_lemmas.rs",
       "spec-text": {
@@ -30533,6 +31191,26 @@
       "is_external": false,
       "has_body": true,
       "is_cfg": false,
+      "has_no_decreases_attr": false
+    },
+    "probe:curve25519-dalek/4.1.3/lizard/u32_constants/field_element()": {
+      "code-path": "curve25519-dalek/src/lizard/u32_constants.rs",
+      "spec-text": {
+        "lines-start": 7,
+        "lines-end": 9
+      },
+      "kind": "exec",
+      "context": "standalone",
+      "specified": false,
+      "has_requires": false,
+      "has_ensures": false,
+      "has_decreases": false,
+      "has_trusted_assumption": false,
+      "contains_admit": false,
+      "is_external_body": false,
+      "is_external": false,
+      "has_body": true,
+      "is_cfg": true,
       "has_no_decreases_attr": false
     },
     "probe:curve25519-dalek/4.1.3/lizard_lemmas/lemmas/axiom_decode_from_point()": {
@@ -53400,6 +54078,446 @@
       "is_cfg": true,
       "has_no_decreases_attr": false
     },
+    "probe:curve25519-dalek/4.1.3/ristretto/clear_cofactor()": {
+      "code-path": "curve25519-dalek/src/ristretto.rs",
+      "spec-text": {
+        "lines-start": 3971,
+        "lines-end": 3973
+      },
+      "kind": "exec",
+      "context": "impl",
+      "specified": false,
+      "has_requires": false,
+      "has_ensures": false,
+      "has_decreases": false,
+      "has_trusted_assumption": false,
+      "contains_admit": false,
+      "is_external_body": false,
+      "is_external": false,
+      "has_body": true,
+      "is_cfg": true,
+      "has_no_decreases_attr": false
+    },
+    "probe:curve25519-dalek/4.1.3/ristretto/deserialize()": {
+      "code-path": "curve25519-dalek/src/ristretto.rs",
+      "spec-text": {
+        "lines-start": 1014,
+        "lines-end": 1045
+      },
+      "kind": "exec",
+      "context": "impl",
+      "specified": false,
+      "has_requires": false,
+      "has_ensures": false,
+      "has_decreases": false,
+      "has_trusted_assumption": false,
+      "contains_admit": false,
+      "is_external_body": false,
+      "is_external": false,
+      "has_body": true,
+      "is_cfg": true,
+      "has_no_decreases_attr": false
+    },
+    "probe:curve25519-dalek/4.1.3/ristretto/double()": {
+      "code-path": "curve25519-dalek/src/ristretto.rs",
+      "spec-text": {
+        "lines-start": 3933,
+        "lines-end": 3935
+      },
+      "kind": "exec",
+      "context": "impl",
+      "specified": false,
+      "has_requires": false,
+      "has_ensures": false,
+      "has_decreases": false,
+      "has_trusted_assumption": false,
+      "contains_admit": false,
+      "is_external_body": false,
+      "is_external": false,
+      "has_body": true,
+      "is_cfg": true,
+      "has_no_decreases_attr": false
+    },
+    "probe:curve25519-dalek/4.1.3/ristretto/expecting()": {
+      "code-path": "curve25519-dalek/src/ristretto.rs",
+      "spec-text": {
+        "lines-start": 1023,
+        "lines-end": 1025
+      },
+      "kind": "exec",
+      "context": "impl",
+      "specified": false,
+      "has_requires": false,
+      "has_ensures": false,
+      "has_decreases": false,
+      "has_trusted_assumption": false,
+      "contains_admit": false,
+      "is_external_body": false,
+      "is_external": false,
+      "has_body": true,
+      "is_cfg": true,
+      "has_no_decreases_attr": false
+    },
+    "probe:curve25519-dalek/4.1.3/ristretto/from_bytes()": {
+      "code-path": "curve25519-dalek/src/ristretto.rs",
+      "spec-text": {
+        "lines-start": 3942,
+        "lines-end": 3951
+      },
+      "kind": "exec",
+      "context": "impl",
+      "specified": false,
+      "has_requires": false,
+      "has_ensures": false,
+      "has_decreases": false,
+      "has_trusted_assumption": false,
+      "contains_admit": false,
+      "is_external_body": false,
+      "is_external": false,
+      "has_body": true,
+      "is_cfg": true,
+      "has_no_decreases_attr": false
+    },
+    "probe:curve25519-dalek/4.1.3/ristretto/from_bytes_unchecked()": {
+      "code-path": "curve25519-dalek/src/ristretto.rs",
+      "spec-text": {
+        "lines-start": 3953,
+        "lines-end": 3956
+      },
+      "kind": "exec",
+      "context": "impl",
+      "specified": false,
+      "has_requires": false,
+      "has_ensures": false,
+      "has_decreases": false,
+      "has_trusted_assumption": false,
+      "contains_admit": false,
+      "is_external_body": false,
+      "is_external": false,
+      "has_body": true,
+      "is_cfg": true,
+      "has_no_decreases_attr": false
+    },
+    "probe:curve25519-dalek/4.1.3/ristretto/generator()": {
+      "code-path": "curve25519-dalek/src/ristretto.rs",
+      "spec-text": {
+        "lines-start": 3925,
+        "lines-end": 3927
+      },
+      "kind": "exec",
+      "context": "impl",
+      "specified": false,
+      "has_requires": false,
+      "has_ensures": false,
+      "has_decreases": false,
+      "has_trusted_assumption": false,
+      "contains_admit": false,
+      "is_external_body": false,
+      "is_external": false,
+      "has_body": true,
+      "is_cfg": true,
+      "has_no_decreases_attr": false
+    },
+    "probe:curve25519-dalek/4.1.3/ristretto/identity()": {
+      "code-path": "curve25519-dalek/src/ristretto.rs",
+      "spec-text": {
+        "lines-start": 3921,
+        "lines-end": 3923
+      },
+      "kind": "exec",
+      "context": "impl",
+      "specified": false,
+      "has_requires": false,
+      "has_ensures": false,
+      "has_decreases": false,
+      "has_trusted_assumption": false,
+      "contains_admit": false,
+      "is_external_body": false,
+      "is_external": false,
+      "has_body": true,
+      "is_cfg": true,
+      "has_no_decreases_attr": false
+    },
+    "probe:curve25519-dalek/4.1.3/ristretto/into_subgroup()": {
+      "code-path": "curve25519-dalek/src/ristretto.rs",
+      "spec-text": {
+        "lines-start": 3975,
+        "lines-end": 3977
+      },
+      "kind": "exec",
+      "context": "impl",
+      "specified": false,
+      "has_requires": false,
+      "has_ensures": false,
+      "has_decreases": false,
+      "has_trusted_assumption": false,
+      "contains_admit": false,
+      "is_external_body": false,
+      "is_external": false,
+      "has_body": true,
+      "is_cfg": true,
+      "has_no_decreases_attr": false
+    },
+    "probe:curve25519-dalek/4.1.3/ristretto/is_identity()": {
+      "code-path": "curve25519-dalek/src/ristretto.rs",
+      "spec-text": {
+        "lines-start": 3929,
+        "lines-end": 3931
+      },
+      "kind": "exec",
+      "context": "impl",
+      "specified": false,
+      "has_requires": false,
+      "has_ensures": false,
+      "has_decreases": false,
+      "has_trusted_assumption": false,
+      "contains_admit": false,
+      "is_external_body": false,
+      "is_external": false,
+      "has_body": true,
+      "is_cfg": true,
+      "has_no_decreases_attr": false
+    },
+    "probe:curve25519-dalek/4.1.3/ristretto/is_torsion_free()": {
+      "code-path": "curve25519-dalek/src/ristretto.rs",
+      "spec-text": {
+        "lines-start": 3979,
+        "lines-end": 3981
+      },
+      "kind": "exec",
+      "context": "impl",
+      "specified": false,
+      "has_requires": false,
+      "has_ensures": false,
+      "has_decreases": false,
+      "has_trusted_assumption": false,
+      "contains_admit": false,
+      "is_external_body": false,
+      "is_external": false,
+      "has_body": true,
+      "is_cfg": true,
+      "has_no_decreases_attr": false
+    },
+    "probe:curve25519-dalek/4.1.3/ristretto/neg_req()": {
+      "code-path": "curve25519-dalek/src/ristretto.rs",
+      "spec-text": {
+        "lines-start": 3323,
+        "lines-end": 3326
+      },
+      "kind": "spec",
+      "context": "impl",
+      "specified": false,
+      "has_requires": false,
+      "has_ensures": false,
+      "has_decreases": false,
+      "has_trusted_assumption": false,
+      "contains_admit": false,
+      "is_external_body": false,
+      "is_external": false,
+      "has_body": true,
+      "is_cfg": false,
+      "has_no_decreases_attr": false
+    },
+    "probe:curve25519-dalek/4.1.3/ristretto/neg_spec()": {
+      "code-path": "curve25519-dalek/src/ristretto.rs",
+      "spec-text": {
+        "lines-start": 3328,
+        "lines-end": 3331
+      },
+      "kind": "spec",
+      "context": "impl",
+      "specified": false,
+      "has_requires": false,
+      "has_ensures": false,
+      "has_decreases": false,
+      "has_trusted_assumption": false,
+      "contains_admit": false,
+      "is_external_body": false,
+      "is_external": false,
+      "has_body": true,
+      "is_cfg": false,
+      "has_no_decreases_attr": false
+    },
+    "probe:curve25519-dalek/4.1.3/ristretto/obeys_neg_spec()": {
+      "code-path": "curve25519-dalek/src/ristretto.rs",
+      "spec-text": {
+        "lines-start": 3319,
+        "lines-end": 3321
+      },
+      "kind": "spec",
+      "context": "impl",
+      "specified": false,
+      "has_requires": false,
+      "has_ensures": false,
+      "has_decreases": false,
+      "has_trusted_assumption": false,
+      "contains_admit": false,
+      "is_external_body": false,
+      "is_external": false,
+      "has_body": true,
+      "is_cfg": false,
+      "has_no_decreases_attr": false
+    },
+    "probe:curve25519-dalek/4.1.3/ristretto/random()": {
+      "code-path": "curve25519-dalek/src/ristretto.rs",
+      "spec-text": {
+        "lines-start": 3914,
+        "lines-end": 3919
+      },
+      "kind": "exec",
+      "context": "impl",
+      "specified": false,
+      "has_requires": false,
+      "has_ensures": false,
+      "has_decreases": false,
+      "has_trusted_assumption": false,
+      "contains_admit": false,
+      "is_external_body": false,
+      "is_external": false,
+      "has_body": true,
+      "is_cfg": true,
+      "has_no_decreases_attr": false
+    },
+    "probe:curve25519-dalek/4.1.3/ristretto/serialize()": {
+      "code-path": "curve25519-dalek/src/ristretto.rs",
+      "spec-text": {
+        "lines-start": 984,
+        "lines-end": 994
+      },
+      "kind": "exec",
+      "context": "impl",
+      "specified": false,
+      "has_requires": false,
+      "has_ensures": false,
+      "has_decreases": false,
+      "has_trusted_assumption": false,
+      "contains_admit": false,
+      "is_external_body": false,
+      "is_external": false,
+      "has_body": true,
+      "is_cfg": true,
+      "has_no_decreases_attr": false
+    },
+    "probe:curve25519-dalek/4.1.3/ristretto/to_bytes()": {
+      "code-path": "curve25519-dalek/src/ristretto.rs",
+      "spec-text": {
+        "lines-start": 3958,
+        "lines-end": 3960
+      },
+      "kind": "exec",
+      "context": "impl",
+      "specified": false,
+      "has_requires": false,
+      "has_ensures": false,
+      "has_decreases": false,
+      "has_trusted_assumption": false,
+      "contains_admit": false,
+      "is_external_body": false,
+      "is_external": false,
+      "has_body": true,
+      "is_cfg": true,
+      "has_no_decreases_attr": false
+    },
+    "probe:curve25519-dalek/4.1.3/ristretto/verus_equivalence_random()": {
+      "code-path": "curve25519-dalek/src/ristretto.rs",
+      "spec-text": {
+        "lines-start": 4580,
+        "lines-end": 4617
+      },
+      "kind": "exec",
+      "context": "standalone",
+      "specified": false,
+      "has_requires": false,
+      "has_ensures": false,
+      "has_decreases": false,
+      "has_trusted_assumption": false,
+      "contains_admit": false,
+      "is_external_body": false,
+      "is_external": false,
+      "has_body": true,
+      "is_cfg": true,
+      "has_no_decreases_attr": false
+    },
+    "probe:curve25519-dalek/4.1.3/ristretto/verus_equivalence_random_multiscalar_mul()": {
+      "code-path": "curve25519-dalek/src/ristretto.rs",
+      "spec-text": {
+        "lines-start": 4627,
+        "lines-end": 4648
+      },
+      "kind": "exec",
+      "context": "standalone",
+      "specified": false,
+      "has_requires": false,
+      "has_ensures": false,
+      "has_decreases": false,
+      "has_trusted_assumption": false,
+      "contains_admit": false,
+      "is_external_body": false,
+      "is_external": false,
+      "has_body": true,
+      "is_cfg": true,
+      "has_no_decreases_attr": false
+    },
+    "probe:curve25519-dalek/4.1.3/ristretto/verus_equivalence_random_optional_multiscalar_mul()": {
+      "code-path": "curve25519-dalek/src/ristretto.rs",
+      "spec-text": {
+        "lines-start": 4650,
+        "lines-end": 4692
+      },
+      "kind": "exec",
+      "context": "standalone",
+      "specified": false,
+      "has_requires": false,
+      "has_ensures": false,
+      "has_decreases": false,
+      "has_trusted_assumption": false,
+      "contains_admit": false,
+      "is_external_body": false,
+      "is_external": false,
+      "has_body": true,
+      "is_cfg": true,
+      "has_no_decreases_attr": false
+    },
+    "probe:curve25519-dalek/4.1.3/ristretto/verus_equivalence_random_sum()": {
+      "code-path": "curve25519-dalek/src/ristretto.rs",
+      "spec-text": {
+        "lines-start": 4702,
+        "lines-end": 4725
+      },
+      "kind": "exec",
+      "context": "standalone",
+      "specified": false,
+      "has_requires": false,
+      "has_ensures": false,
+      "has_decreases": false,
+      "has_trusted_assumption": false,
+      "contains_admit": false,
+      "is_external_body": false,
+      "is_external": false,
+      "has_body": true,
+      "is_cfg": true,
+      "has_no_decreases_attr": false
+    },
+    "probe:curve25519-dalek/4.1.3/ristretto/visit_seq()": {
+      "code-path": "curve25519-dalek/src/ristretto.rs",
+      "spec-text": {
+        "lines-start": 1027,
+        "lines-end": 1041
+      },
+      "kind": "exec",
+      "context": "impl",
+      "specified": false,
+      "has_requires": false,
+      "has_ensures": false,
+      "has_decreases": false,
+      "has_trusted_assumption": false,
+      "contains_admit": false,
+      "is_external_body": false,
+      "is_external": false,
+      "has_body": true,
+      "is_cfg": true,
+      "has_no_decreases_attr": false
+    },
     "probe:curve25519-dalek/4.1.3/ristretto_specs/specs/batch_compress_body()": {
       "code-path": "curve25519-dalek/src/specs/ristretto_specs.rs",
       "spec-text": {
@@ -55873,6 +56991,26 @@
       "has_no_decreases_attr": false,
       "ensures_text": "ensures\n// Result is the lower 4 bits (lower nibble) of x\n\n        result == x % 16,\n        // Result is in range [0, 15]\n        result <= 15,"
     },
+    "probe:curve25519-dalek/4.1.3/scalar/char_le_bits()": {
+      "code-path": "curve25519-dalek/src/scalar.rs",
+      "spec-text": {
+        "lines-start": 4850,
+        "lines-end": 4852
+      },
+      "kind": "exec",
+      "context": "impl",
+      "specified": false,
+      "has_requires": false,
+      "has_ensures": false,
+      "has_decreases": false,
+      "has_trusted_assumption": false,
+      "contains_admit": false,
+      "is_external_body": false,
+      "is_external": false,
+      "has_body": true,
+      "is_cfg": true,
+      "has_no_decreases_attr": false
+    },
     "probe:curve25519-dalek/4.1.3/scalar/clamp_integer()": {
       "code-path": "curve25519-dalek/src/scalar.rs",
       "spec-text": {
@@ -55906,6 +57044,166 @@
         "spec_clamp_integer"
       ]
     },
+    "probe:curve25519-dalek/4.1.3/scalar/deserialize()": {
+      "code-path": "curve25519-dalek/src/scalar.rs",
+      "spec-text": {
+        "lines-start": 2133,
+        "lines-end": 2141
+      },
+      "kind": "exec",
+      "context": "impl",
+      "specified": false,
+      "has_requires": false,
+      "has_ensures": false,
+      "has_decreases": false,
+      "has_trusted_assumption": false,
+      "contains_admit": false,
+      "is_external_body": true,
+      "is_external": false,
+      "has_body": true,
+      "is_cfg": true,
+      "has_no_decreases_attr": false
+    },
+    "probe:curve25519-dalek/4.1.3/scalar/double()": {
+      "code-path": "curve25519-dalek/src/scalar.rs",
+      "spec-text": {
+        "lines-start": 4743,
+        "lines-end": 4745
+      },
+      "kind": "exec",
+      "context": "impl",
+      "specified": false,
+      "has_requires": false,
+      "has_ensures": false,
+      "has_decreases": false,
+      "has_trusted_assumption": false,
+      "contains_admit": false,
+      "is_external_body": false,
+      "is_external": false,
+      "has_body": true,
+      "is_cfg": true,
+      "has_no_decreases_attr": false
+    },
+    "probe:curve25519-dalek/4.1.3/scalar/expecting()": {
+      "code-path": "curve25519-dalek/src/scalar.rs",
+      "spec-text": {
+        "lines-start": 2083,
+        "lines-end": 2093
+      },
+      "kind": "exec",
+      "context": "impl",
+      "specified": false,
+      "has_requires": false,
+      "has_ensures": false,
+      "has_decreases": false,
+      "has_trusted_assumption": false,
+      "contains_admit": false,
+      "is_external_body": true,
+      "is_external": false,
+      "has_body": true,
+      "is_cfg": true,
+      "has_no_decreases_attr": false
+    },
+    "probe:curve25519-dalek/4.1.3/scalar/from_bits()": {
+      "code-path": "curve25519-dalek/src/scalar.rs",
+      "spec-text": {
+        "lines-start": 406,
+        "lines-end": 426
+      },
+      "kind": "exec",
+      "context": "impl",
+      "specified": false,
+      "has_requires": false,
+      "has_ensures": false,
+      "has_decreases": false,
+      "has_trusted_assumption": false,
+      "contains_admit": false,
+      "is_external_body": false,
+      "is_external": false,
+      "has_body": true,
+      "is_cfg": true,
+      "has_no_decreases_attr": false
+    },
+    "probe:curve25519-dalek/4.1.3/scalar/from_repr()": {
+      "code-path": "curve25519-dalek/src/scalar.rs",
+      "spec-text": {
+        "lines-start": 4774,
+        "lines-end": 4776
+      },
+      "kind": "exec",
+      "context": "impl",
+      "specified": false,
+      "has_requires": false,
+      "has_ensures": false,
+      "has_decreases": false,
+      "has_trusted_assumption": false,
+      "contains_admit": false,
+      "is_external_body": false,
+      "is_external": false,
+      "has_body": true,
+      "is_cfg": true,
+      "has_no_decreases_attr": false
+    },
+    "probe:curve25519-dalek/4.1.3/scalar/from_repr_vartime()": {
+      "code-path": "curve25519-dalek/src/scalar.rs",
+      "spec-text": {
+        "lines-start": 4778,
+        "lines-end": 4791
+      },
+      "kind": "exec",
+      "context": "impl",
+      "specified": false,
+      "has_requires": false,
+      "has_ensures": false,
+      "has_decreases": false,
+      "has_trusted_assumption": false,
+      "contains_admit": false,
+      "is_external_body": false,
+      "is_external": false,
+      "has_body": true,
+      "is_cfg": true,
+      "has_no_decreases_attr": false
+    },
+    "probe:curve25519-dalek/4.1.3/scalar/from_uniform_bytes()": {
+      "code-path": "curve25519-dalek/src/scalar.rs",
+      "spec-text": {
+        "lines-start": 4857,
+        "lines-end": 4859
+      },
+      "kind": "exec",
+      "context": "impl",
+      "specified": false,
+      "has_requires": false,
+      "has_ensures": false,
+      "has_decreases": false,
+      "has_trusted_assumption": false,
+      "contains_admit": false,
+      "is_external_body": false,
+      "is_external": false,
+      "has_body": true,
+      "is_cfg": true,
+      "has_no_decreases_attr": false
+    },
+    "probe:curve25519-dalek/4.1.3/scalar/invert()": {
+      "code-path": "curve25519-dalek/src/scalar.rs",
+      "spec-text": {
+        "lines-start": 4747,
+        "lines-end": 4749
+      },
+      "kind": "exec",
+      "context": "impl",
+      "specified": false,
+      "has_requires": false,
+      "has_ensures": false,
+      "has_decreases": false,
+      "has_trusted_assumption": false,
+      "contains_admit": false,
+      "is_external_body": false,
+      "is_external": false,
+      "has_body": true,
+      "is_cfg": true,
+      "has_no_decreases_attr": false
+    },
     "probe:curve25519-dalek/4.1.3/scalar/is_a_scalar()": {
       "code-path": "curve25519-dalek/src/scalar.rs",
       "spec-text": {
@@ -55924,6 +57222,26 @@
       "is_external": false,
       "has_body": true,
       "is_cfg": false,
+      "has_no_decreases_attr": false
+    },
+    "probe:curve25519-dalek/4.1.3/scalar/is_odd()": {
+      "code-path": "curve25519-dalek/src/scalar.rs",
+      "spec-text": {
+        "lines-start": 4797,
+        "lines-end": 4799
+      },
+      "kind": "exec",
+      "context": "impl",
+      "specified": false,
+      "has_requires": false,
+      "has_ensures": false,
+      "has_decreases": false,
+      "has_trusted_assumption": false,
+      "contains_admit": false,
+      "is_external_body": false,
+      "is_external": false,
+      "has_body": true,
+      "is_cfg": true,
       "has_no_decreases_attr": false
     },
     "probe:curve25519-dalek/4.1.3/scalar/mul_req()": {
@@ -56086,6 +57404,26 @@
       "is_cfg": true,
       "has_no_decreases_attr": false
     },
+    "probe:curve25519-dalek/4.1.3/scalar/random()": {
+      "code-path": "curve25519-dalek/src/scalar.rs",
+      "spec-text": {
+        "lines-start": 4732,
+        "lines-end": 4737
+      },
+      "kind": "exec",
+      "context": "impl",
+      "specified": false,
+      "has_requires": false,
+      "has_ensures": false,
+      "has_decreases": false,
+      "has_trusted_assumption": false,
+      "contains_admit": false,
+      "is_external_body": false,
+      "is_external": false,
+      "has_body": true,
+      "is_cfg": true,
+      "has_no_decreases_attr": false
+    },
     "probe:curve25519-dalek/4.1.3/scalar/read_le_u64_into()": {
       "code-path": "curve25519-dalek/src/scalar.rs",
       "spec-text": {
@@ -56150,6 +57488,86 @@
         "len",
         "len"
       ]
+    },
+    "probe:curve25519-dalek/4.1.3/scalar/serialize()": {
+      "code-path": "curve25519-dalek/src/scalar.rs",
+      "spec-text": {
+        "lines-start": 2117,
+        "lines-end": 2127
+      },
+      "kind": "exec",
+      "context": "impl",
+      "specified": false,
+      "has_requires": false,
+      "has_ensures": false,
+      "has_decreases": false,
+      "has_trusted_assumption": false,
+      "contains_admit": false,
+      "is_external_body": true,
+      "is_external": false,
+      "has_body": true,
+      "is_cfg": true,
+      "has_no_decreases_attr": false
+    },
+    "probe:curve25519-dalek/4.1.3/scalar/sqrt()": {
+      "code-path": "curve25519-dalek/src/scalar.rs",
+      "spec-text": {
+        "lines-start": 4756,
+        "lines-end": 4767
+      },
+      "kind": "exec",
+      "context": "impl",
+      "specified": false,
+      "has_requires": false,
+      "has_ensures": false,
+      "has_decreases": false,
+      "has_trusted_assumption": false,
+      "contains_admit": false,
+      "is_external_body": false,
+      "is_external": false,
+      "has_body": true,
+      "is_cfg": true,
+      "has_no_decreases_attr": false
+    },
+    "probe:curve25519-dalek/4.1.3/scalar/sqrt_ratio()": {
+      "code-path": "curve25519-dalek/src/scalar.rs",
+      "spec-text": {
+        "lines-start": 4751,
+        "lines-end": 4754
+      },
+      "kind": "exec",
+      "context": "impl",
+      "specified": false,
+      "has_requires": false,
+      "has_ensures": false,
+      "has_decreases": false,
+      "has_trusted_assumption": false,
+      "contains_admit": false,
+      "is_external_body": false,
+      "is_external": false,
+      "has_body": true,
+      "is_cfg": true,
+      "has_no_decreases_attr": false
+    },
+    "probe:curve25519-dalek/4.1.3/scalar/square()": {
+      "code-path": "curve25519-dalek/src/scalar.rs",
+      "spec-text": {
+        "lines-start": 4739,
+        "lines-end": 4741
+      },
+      "kind": "exec",
+      "context": "impl",
+      "specified": false,
+      "has_requires": false,
+      "has_ensures": false,
+      "has_decreases": false,
+      "has_trusted_assumption": false,
+      "contains_admit": false,
+      "is_external_body": false,
+      "is_external": false,
+      "has_body": true,
+      "is_cfg": true,
+      "has_no_decreases_attr": false
     },
     "probe:curve25519-dalek/4.1.3/scalar/square_multiply()": {
       "code-path": "curve25519-dalek/src/scalar.rs",
@@ -56260,6 +57678,46 @@
         "lines-end": 733
       },
       "kind": "spec",
+      "context": "impl",
+      "specified": false,
+      "has_requires": false,
+      "has_ensures": false,
+      "has_decreases": false,
+      "has_trusted_assumption": false,
+      "contains_admit": false,
+      "is_external_body": false,
+      "is_external": false,
+      "has_body": true,
+      "is_cfg": true,
+      "has_no_decreases_attr": false
+    },
+    "probe:curve25519-dalek/4.1.3/scalar/to_le_bits()": {
+      "code-path": "curve25519-dalek/src/scalar.rs",
+      "spec-text": {
+        "lines-start": 4846,
+        "lines-end": 4848
+      },
+      "kind": "exec",
+      "context": "impl",
+      "specified": false,
+      "has_requires": false,
+      "has_ensures": false,
+      "has_decreases": false,
+      "has_trusted_assumption": false,
+      "contains_admit": false,
+      "is_external_body": false,
+      "is_external": false,
+      "has_body": true,
+      "is_cfg": true,
+      "has_no_decreases_attr": false
+    },
+    "probe:curve25519-dalek/4.1.3/scalar/to_repr()": {
+      "code-path": "curve25519-dalek/src/scalar.rs",
+      "spec-text": {
+        "lines-start": 4793,
+        "lines-end": 4795
+      },
+      "kind": "exec",
       "context": "impl",
       "specified": false,
       "has_requires": false,
@@ -57352,6 +58810,26 @@
       "is_cfg": false,
       "has_no_decreases_attr": false,
       "ensures_text": "ensures\n        (z as nat) == (x as nat) * (y as nat),"
+    },
+    "probe:curve25519-dalek/4.1.3/scalar/visit_seq()": {
+      "code-path": "curve25519-dalek/src/scalar.rs",
+      "spec-text": {
+        "lines-start": 2095,
+        "lines-end": 2111
+      },
+      "kind": "exec",
+      "context": "impl",
+      "specified": false,
+      "has_requires": false,
+      "has_ensures": false,
+      "has_decreases": false,
+      "has_trusted_assumption": false,
+      "contains_admit": false,
+      "is_external_body": true,
+      "is_external": false,
+      "has_body": true,
+      "is_cfg": true,
+      "has_no_decreases_attr": false
     },
     "probe:curve25519-dalek/4.1.3/scalar52_specs/specs/five_limbs_to_nat_aux()": {
       "code-path": "curve25519-dalek/src/specs/scalar52_specs.rs",
@@ -71438,6 +72916,126 @@
       "spec-text": {
         "lines-start": 398,
         "lines-end": 403
+      },
+      "kind": "exec",
+      "context": "trait",
+      "specified": false,
+      "has_requires": false,
+      "has_ensures": false,
+      "has_decreases": false,
+      "has_trusted_assumption": false,
+      "contains_admit": false,
+      "is_external_body": false,
+      "is_external": false,
+      "has_body": false,
+      "is_cfg": false,
+      "has_no_decreases_attr": false
+    },
+    "probe:curve25519-dalek/4.1.3/traits/basepoint()": {
+      "code-path": "curve25519-dalek/src/traits.rs",
+      "spec-text": {
+        "lines-start": 161,
+        "lines-end": 162
+      },
+      "kind": "exec",
+      "context": "trait",
+      "specified": false,
+      "has_requires": false,
+      "has_ensures": false,
+      "has_decreases": false,
+      "has_trusted_assumption": false,
+      "contains_admit": false,
+      "is_external_body": false,
+      "is_external": false,
+      "has_body": false,
+      "is_cfg": false,
+      "has_no_decreases_attr": false
+    },
+    "probe:curve25519-dalek/4.1.3/traits/is_identity()": {
+      "code-path": "curve25519-dalek/src/traits.rs",
+      "spec-text": {
+        "lines-start": 51,
+        "lines-end": 52
+      },
+      "kind": "exec",
+      "context": "trait",
+      "specified": false,
+      "has_requires": false,
+      "has_ensures": false,
+      "has_decreases": false,
+      "has_trusted_assumption": false,
+      "contains_admit": false,
+      "is_external_body": false,
+      "is_external": false,
+      "has_body": false,
+      "is_cfg": false,
+      "has_no_decreases_attr": false
+    },
+    "probe:curve25519-dalek/4.1.3/traits/is_identity_spec()": {
+      "code-path": "curve25519-dalek/src/traits.rs",
+      "spec-text": {
+        "lines-start": 57,
+        "lines-end": 58
+      },
+      "kind": "spec",
+      "context": "trait",
+      "specified": false,
+      "has_requires": false,
+      "has_ensures": false,
+      "has_decreases": false,
+      "has_trusted_assumption": false,
+      "contains_admit": false,
+      "is_external_body": false,
+      "is_external": false,
+      "has_body": false,
+      "is_cfg": false,
+      "has_no_decreases_attr": false
+    },
+    "probe:curve25519-dalek/4.1.3/traits/is_valid()": {
+      "code-path": "curve25519-dalek/src/traits.rs",
+      "spec-text": {
+        "lines-start": 516,
+        "lines-end": 517
+      },
+      "kind": "exec",
+      "context": "trait",
+      "specified": false,
+      "has_requires": false,
+      "has_ensures": false,
+      "has_decreases": false,
+      "has_trusted_assumption": false,
+      "contains_admit": false,
+      "is_external_body": false,
+      "is_external": false,
+      "has_body": false,
+      "is_cfg": false,
+      "has_no_decreases_attr": false
+    },
+    "probe:curve25519-dalek/4.1.3/traits/mul_base()": {
+      "code-path": "curve25519-dalek/src/traits.rs",
+      "spec-text": {
+        "lines-start": 164,
+        "lines-end": 165
+      },
+      "kind": "exec",
+      "context": "trait",
+      "specified": false,
+      "has_requires": false,
+      "has_ensures": false,
+      "has_decreases": false,
+      "has_trusted_assumption": false,
+      "contains_admit": false,
+      "is_external_body": false,
+      "is_external": false,
+      "has_body": false,
+      "is_cfg": false,
+      "has_no_decreases_attr": false
+    },
+    "probe:curve25519-dalek/4.1.3/traits/optional_mixed_multiscalar_mul()": {
+      "code-path": "curve25519-dalek/src/traits.rs",
+      "spec-text": {
+        "lines-start": 473,
+        "lines-end": 502
       },
       "kind": "exec",
       "context": "trait",
