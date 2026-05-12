@@ -8,29 +8,29 @@
   },
   "source": {
     "repo": "https://github.com/Beneficial-AI-Foundation/dalek-verus.git",
-    "commit": "6bd88b5c90c83ad03c0eddc201105faa4787942d",
+    "commit": "d4c6a944625d7e2473899e28a5129baa05cd3080",
     "language": "rust",
     "package": "curve25519-dalek",
     "package-version": "4.1.3"
   },
-  "timestamp": "2026-04-14T09:21:20Z",
+  "timestamp": "2026-05-12T20:16:20Z",
   "data": {
     "status": "success",
     "atomize": {
       "success": true,
-      "output_file": "../dalek-verus/.verilib/probes/verus_curve25519-dalek_4.1.3_atoms.json",
-      "total_functions": 2219,
+      "output_file": "./.verilib/probes/verus_curve25519-dalek_4.1.3_atoms.json",
+      "total_functions": 2220,
       "error": null
     },
     "specify": {
       "success": true,
-      "output_file": "../dalek-verus/.verilib/probes/verus_curve25519-dalek_4.1.3_specs.json",
+      "output_file": "./.verilib/probes/verus_curve25519-dalek_4.1.3_specs.json",
       "total_functions": 2024,
       "error": null
     },
     "verify": {
       "success": true,
-      "output_file": "../dalek-verus/.verilib/probes/verus_curve25519-dalek_4.1.3_proofs.json",
+      "output_file": "./.verilib/probes/verus_curve25519-dalek_4.1.3_proofs.json",
       "summary": {
         "total_functions": 1204,
         "verified": 1153,
@@ -41,10 +41,10 @@
     },
     "trust-base": {
       "verified": 1094,
-      "trusted": 130,
-      "unverified": 3,
+      "trusted": 132,
+      "unverified": 1,
       "failed": 0,
-      "absent": 992
+      "absent": 993
     }
   }
 }

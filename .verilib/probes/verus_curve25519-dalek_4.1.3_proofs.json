@@ -8,12 +8,12 @@
   },
   "source": {
     "repo": "https://github.com/Beneficial-AI-Foundation/dalek-verus.git",
-    "commit": "6bd88b5c90c83ad03c0eddc201105faa4787942d",
+    "commit": "d4c6a944625d7e2473899e28a5129baa05cd3080",
     "language": "rust",
     "package": "curve25519-dalek",
     "package-version": "4.1.3"
   },
-  "timestamp": "2026-04-14T09:21:20Z",
+  "timestamp": "2026-05-12T20:16:20Z",
   "data": {
     "probe:curve25519-dalek/4.1.3/add_lemmas/field_lemmas/lemmas/lemma_add_bounds_propagate()": {
       "code-path": "curve25519-dalek/src/lemmas/field_lemmas/add_lemmas.rs",
@@ -155,31 +155,31 @@
     },
     "probe:curve25519-dalek/4.1.3/axioms/ristretto_lemmas/lemmas/axiom_elligator_in_even_subgroup()": {
       "code-path": "curve25519-dalek/src/lemmas/ristretto_lemmas/axioms.rs",
-      "code-line": 159,
+      "code-line": 153,
       "verified": false,
       "status": "sorries"
     },
     "probe:curve25519-dalek/4.1.3/axioms/ristretto_lemmas/lemmas/axiom_elligator_nonzero_intermediates()": {
       "code-path": "curve25519-dalek/src/lemmas/ristretto_lemmas/axioms.rs",
-      "code-line": 133,
+      "code-line": 127,
       "verified": false,
       "status": "sorries"
     },
     "probe:curve25519-dalek/4.1.3/axioms/ristretto_lemmas/lemmas/axiom_elligator_on_curve()": {
       "code-path": "curve25519-dalek/src/lemmas/ristretto_lemmas/axioms.rs",
-      "code-line": 114,
+      "code-line": 108,
       "verified": false,
       "status": "sorries"
     },
     "probe:curve25519-dalek/4.1.3/axioms/ristretto_lemmas/lemmas/axiom_even_subgroup_closed_under_add()": {
       "code-path": "curve25519-dalek/src/lemmas/ristretto_lemmas/axioms.rs",
-      "code-line": 177,
+      "code-line": 171,
       "verified": false,
       "status": "sorries"
     },
     "probe:curve25519-dalek/4.1.3/axioms/ristretto_lemmas/lemmas/axiom_invsqrt_a_minus_d()": {
       "code-path": "curve25519-dalek/src/lemmas/ristretto_lemmas/axioms.rs",
-      "code-line": 205,
+      "code-line": 199,
       "verified": false,
       "status": "sorries"
     },
@@ -191,7 +191,7 @@
     },
     "probe:curve25519-dalek/4.1.3/axioms/ristretto_lemmas/lemmas/axiom_ristretto_cross_mul_iff_equivalent()": {
       "code-path": "curve25519-dalek/src/lemmas/ristretto_lemmas/axioms.rs",
-      "code-line": 84,
+      "code-line": 78,
       "verified": false,
       "status": "sorries"
     },

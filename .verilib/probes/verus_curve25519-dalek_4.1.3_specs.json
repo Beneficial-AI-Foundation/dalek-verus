@@ -8,12 +8,12 @@
   },
   "source": {
     "repo": "https://github.com/Beneficial-AI-Foundation/dalek-verus.git",
-    "commit": "6bd88b5c90c83ad03c0eddc201105faa4787942d",
+    "commit": "d4c6a944625d7e2473899e28a5129baa05cd3080",
     "language": "rust",
     "package": "curve25519-dalek",
     "package-version": "4.1.3"
   },
-  "timestamp": "2026-04-14T09:21:20Z",
+  "timestamp": "2026-05-12T20:16:20Z",
   "data": {
     "probe:curve25519-dalek/4.1.3/DalekBits#Display<&Formatter<'_>>#fmt()": {
       "code-path": "curve25519-dalek/build.rs",
@@ -3219,8 +3219,8 @@
     "probe:curve25519-dalek/4.1.3/axioms/ristretto_lemmas/lemmas/axiom_elligator_in_even_subgroup()": {
       "code-path": "curve25519-dalek/src/lemmas/ristretto_lemmas/axioms.rs",
       "spec-text": {
-        "lines-start": 159,
-        "lines-end": 175
+        "lines-start": 153,
+        "lines-end": 169
       },
       "kind": "proof",
       "context": "standalone",
@@ -3258,8 +3258,8 @@
     "probe:curve25519-dalek/4.1.3/axioms/ristretto_lemmas/lemmas/axiom_elligator_nonzero_intermediates()": {
       "code-path": "curve25519-dalek/src/lemmas/ristretto_lemmas/axioms.rs",
       "spec-text": {
-        "lines-start": 133,
-        "lines-end": 157
+        "lines-start": 127,
+        "lines-end": 151
       },
       "kind": "proof",
       "context": "standalone",
@@ -3307,8 +3307,8 @@
     "probe:curve25519-dalek/4.1.3/axioms/ristretto_lemmas/lemmas/axiom_elligator_on_curve()": {
       "code-path": "curve25519-dalek/src/lemmas/ristretto_lemmas/axioms.rs",
       "spec-text": {
-        "lines-start": 114,
-        "lines-end": 131
+        "lines-start": 108,
+        "lines-end": 125
       },
       "kind": "proof",
       "context": "standalone",
@@ -3343,8 +3343,8 @@
     "probe:curve25519-dalek/4.1.3/axioms/ristretto_lemmas/lemmas/axiom_even_subgroup_closed_under_add()": {
       "code-path": "curve25519-dalek/src/lemmas/ristretto_lemmas/axioms.rs",
       "spec-text": {
-        "lines-start": 177,
-        "lines-end": 200
+        "lines-start": 171,
+        "lines-end": 194
       },
       "kind": "proof",
       "context": "standalone",
@@ -3413,8 +3413,8 @@
     "probe:curve25519-dalek/4.1.3/axioms/ristretto_lemmas/lemmas/axiom_invsqrt_a_minus_d()": {
       "code-path": "curve25519-dalek/src/lemmas/ristretto_lemmas/axioms.rs",
       "spec-text": {
-        "lines-start": 205,
-        "lines-end": 230
+        "lines-start": 199,
+        "lines-end": 224
       },
       "kind": "proof",
       "context": "standalone",
@@ -3462,7 +3462,7 @@
       "code-path": "curve25519-dalek/src/lemmas/ristretto_lemmas/axioms.rs",
       "spec-text": {
         "lines-start": 62,
-        "lines-end": 81
+        "lines-end": 75
       },
       "kind": "proof",
       "context": "standalone",
@@ -3471,7 +3471,7 @@
       "has_ensures": true,
       "has_decreases": false,
       "has_trusted_assumption": true,
-      "contains_admit": false,
+      "contains_admit": true,
       "is_external_body": false,
       "is_external": false,
       "has_body": true,
@@ -3494,8 +3494,8 @@
     "probe:curve25519-dalek/4.1.3/axioms/ristretto_lemmas/lemmas/axiom_ristretto_cross_mul_iff_equivalent()": {
       "code-path": "curve25519-dalek/src/lemmas/ristretto_lemmas/axioms.rs",
       "spec-text": {
-        "lines-start": 84,
-        "lines-end": 112
+        "lines-start": 78,
+        "lines-end": 106
       },
       "kind": "proof",
       "context": "standalone",
@@ -3707,8 +3707,8 @@
     "probe:curve25519-dalek/4.1.3/axioms/ristretto_lemmas/lemmas/pow_field_element()": {
       "code-path": "curve25519-dalek/src/lemmas/ristretto_lemmas/axioms.rs",
       "spec-text": {
-        "lines-start": 236,
-        "lines-end": 255
+        "lines-start": 230,
+        "lines-end": 249
       },
       "kind": "exec",
       "context": "standalone",
@@ -11096,8 +11096,8 @@
     "probe:curve25519-dalek/4.1.3/cross_mul_check()": {
       "code-path": "curve25519-dalek/src/lemmas/ristretto_lemmas/axioms.rs",
       "spec-text": {
-        "lines-start": 860,
-        "lines-end": 866
+        "lines-start": 854,
+        "lines-end": 860
       },
       "kind": "exec",
       "context": "standalone",
@@ -14961,8 +14961,8 @@
     "probe:curve25519-dalek/4.1.3/decode_and_check()": {
       "code-path": "curve25519-dalek/src/lemmas/ristretto_lemmas/axioms.rs",
       "spec-text": {
-        "lines-start": 366,
-        "lines-end": 391
+        "lines-start": 360,
+        "lines-end": 385
       },
       "kind": "exec",
       "context": "standalone",
@@ -29386,26 +29386,6 @@
         "p"
       ]
     },
-    "probe:curve25519-dalek/4.1.3/invsqrt_field()": {
-      "code-path": "curve25519-dalek/src/lemmas/ristretto_lemmas/axioms.rs",
-      "spec-text": {
-        "lines-start": 1132,
-        "lines-end": 1135
-      },
-      "kind": "exec",
-      "context": "standalone",
-      "specified": false,
-      "has_requires": false,
-      "has_ensures": false,
-      "has_decreases": false,
-      "has_trusted_assumption": false,
-      "contains_admit": false,
-      "is_external_body": false,
-      "is_external": false,
-      "has_body": true,
-      "is_cfg": true,
-      "has_no_decreases_attr": false
-    },
     "probe:curve25519-dalek/4.1.3/is_capable_simd()": {
       "code-path": "curve25519-dalek/build.rs",
       "spec-text": {
@@ -30349,6 +30329,26 @@
       "is_external": false,
       "has_body": true,
       "is_cfg": false,
+      "has_no_decreases_attr": false
+    },
+    "probe:curve25519-dalek/4.1.3/lemmas/ristretto_lemmas/axioms/invsqrt_field()": {
+      "code-path": "curve25519-dalek/src/lemmas/ristretto_lemmas/axioms.rs",
+      "spec-text": {
+        "lines-start": 1126,
+        "lines-end": 1129
+      },
+      "kind": "exec",
+      "context": "standalone",
+      "specified": false,
+      "has_requires": false,
+      "has_ensures": false,
+      "has_decreases": false,
+      "has_trusted_assumption": false,
+      "contains_admit": false,
+      "is_external_body": false,
+      "is_external": false,
+      "has_body": true,
+      "is_cfg": true,
       "has_no_decreases_attr": false
     },
     "probe:curve25519-dalek/4.1.3/limbs_to_bytes_lemmas/field_lemmas/lemmas/bytes_match_limbs_packing()": {
@@ -50100,7 +50100,7 @@
       "has_ensures": true,
       "has_decreases": false,
       "has_trusted_assumption": true,
-      "contains_admit": false,
+      "contains_admit": true,
       "is_external_body": false,
       "is_external": false,
       "has_body": true,
@@ -70363,8 +70363,8 @@
     "probe:curve25519-dalek/4.1.3/test_ristretto_decode_axioms/axioms/ristretto_lemmas/lemmas/curve_residue()": {
       "code-path": "curve25519-dalek/src/lemmas/ristretto_lemmas/axioms.rs",
       "spec-text": {
-        "lines-start": 267,
-        "lines-end": 276
+        "lines-start": 261,
+        "lines-end": 270
       },
       "kind": "exec",
       "context": "standalone",
@@ -70383,8 +70383,8 @@
     "probe:curve25519-dalek/4.1.3/test_ristretto_decode_axioms/axioms/ristretto_lemmas/lemmas/test_d_minus_one_squared_value()": {
       "code-path": "curve25519-dalek/src/lemmas/ristretto_lemmas/axioms.rs",
       "spec-text": {
-        "lines-start": 1107,
-        "lines-end": 1120
+        "lines-start": 1101,
+        "lines-end": 1114
       },
       "kind": "exec",
       "context": "standalone",
@@ -70403,8 +70403,8 @@
     "probe:curve25519-dalek/4.1.3/test_ristretto_decode_axioms/axioms/ristretto_lemmas/lemmas/test_elligator_in_even_subgroup()": {
       "code-path": "curve25519-dalek/src/lemmas/ristretto_lemmas/axioms.rs",
       "spec-text": {
-        "lines-start": 981,
-        "lines-end": 1031
+        "lines-start": 975,
+        "lines-end": 1025
       },
       "kind": "exec",
       "context": "standalone",
@@ -70423,8 +70423,8 @@
     "probe:curve25519-dalek/4.1.3/test_ristretto_decode_axioms/axioms/ristretto_lemmas/lemmas/test_elligator_nonzero_denominators()": {
       "code-path": "curve25519-dalek/src/lemmas/ristretto_lemmas/axioms.rs",
       "spec-text": {
-        "lines-start": 1033,
-        "lines-end": 1089
+        "lines-start": 1027,
+        "lines-end": 1083
       },
       "kind": "exec",
       "context": "standalone",
@@ -70443,8 +70443,8 @@
     "probe:curve25519-dalek/4.1.3/test_ristretto_decode_axioms/axioms/ristretto_lemmas/lemmas/test_elligator_on_curve()": {
       "code-path": "curve25519-dalek/src/lemmas/ristretto_lemmas/axioms.rs",
       "spec-text": {
-        "lines-start": 928,
-        "lines-end": 979
+        "lines-start": 922,
+        "lines-end": 973
       },
       "kind": "exec",
       "context": "standalone",
@@ -70463,8 +70463,8 @@
     "probe:curve25519-dalek/4.1.3/test_ristretto_decode_axioms/axioms/ristretto_lemmas/lemmas/test_minus_one_field_element_value()": {
       "code-path": "curve25519-dalek/src/lemmas/ristretto_lemmas/axioms.rs",
       "spec-text": {
-        "lines-start": 671,
-        "lines-end": 693
+        "lines-start": 665,
+        "lines-end": 687
       },
       "kind": "exec",
       "context": "standalone",
@@ -70483,8 +70483,8 @@
     "probe:curve25519-dalek/4.1.3/test_ristretto_decode_axioms/axioms/ristretto_lemmas/lemmas/test_one_minus_d_squared_value()": {
       "code-path": "curve25519-dalek/src/lemmas/ristretto_lemmas/axioms.rs",
       "spec-text": {
-        "lines-start": 1091,
-        "lines-end": 1105
+        "lines-start": 1085,
+        "lines-end": 1099
       },
       "kind": "exec",
       "context": "standalone",
@@ -70503,8 +70503,8 @@
     "probe:curve25519-dalek/4.1.3/test_ristretto_decode_axioms/axioms/ristretto_lemmas/lemmas/test_p_is_prime()": {
       "code-path": "curve25519-dalek/src/lemmas/ristretto_lemmas/axioms.rs",
       "spec-text": {
-        "lines-start": 769,
-        "lines-end": 841
+        "lines-start": 763,
+        "lines-end": 835
       },
       "kind": "exec",
       "context": "standalone",
@@ -70523,8 +70523,8 @@
     "probe:curve25519-dalek/4.1.3/test_ristretto_decode_axioms/axioms/ristretto_lemmas/lemmas/test_ristretto_cross_mul_iff_equivalent()": {
       "code-path": "curve25519-dalek/src/lemmas/ristretto_lemmas/axioms.rs",
       "spec-text": {
-        "lines-start": 843,
-        "lines-end": 926
+        "lines-start": 837,
+        "lines-end": 920
       },
       "kind": "exec",
       "context": "standalone",
@@ -70543,8 +70543,8 @@
     "probe:curve25519-dalek/4.1.3/test_ristretto_decode_axioms/axioms/ristretto_lemmas/lemmas/test_ristretto_decode_in_even_subgroup()": {
       "code-path": "curve25519-dalek/src/lemmas/ristretto_lemmas/axioms.rs",
       "spec-text": {
-        "lines-start": 452,
-        "lines-end": 646
+        "lines-start": 446,
+        "lines-end": 640
       },
       "kind": "exec",
       "context": "standalone",
@@ -70563,8 +70563,8 @@
     "probe:curve25519-dalek/4.1.3/test_ristretto_decode_axioms/axioms/ristretto_lemmas/lemmas/test_ristretto_decode_on_curve()": {
       "code-path": "curve25519-dalek/src/lemmas/ristretto_lemmas/axioms.rs",
       "spec-text": {
-        "lines-start": 278,
-        "lines-end": 450
+        "lines-start": 272,
+        "lines-end": 444
       },
       "kind": "exec",
       "context": "standalone",
@@ -70583,8 +70583,8 @@
     "probe:curve25519-dalek/4.1.3/test_ristretto_decode_axioms/axioms/ristretto_lemmas/lemmas/test_sqrt_m1_limbs_bounded()": {
       "code-path": "curve25519-dalek/src/lemmas/ristretto_lemmas/axioms.rs",
       "spec-text": {
-        "lines-start": 648,
-        "lines-end": 669
+        "lines-start": 642,
+        "lines-end": 663
       },
       "kind": "exec",
       "context": "standalone",
@@ -70603,8 +70603,8 @@
     "probe:curve25519-dalek/4.1.3/test_ristretto_decode_axioms/axioms/ristretto_lemmas/lemmas/test_sqrt_m1_not_square()": {
       "code-path": "curve25519-dalek/src/lemmas/ristretto_lemmas/axioms.rs",
       "spec-text": {
-        "lines-start": 695,
-        "lines-end": 767
+        "lines-start": 689,
+        "lines-end": 761
       },
       "kind": "exec",
       "context": "standalone",
@@ -70623,8 +70623,8 @@
     "probe:curve25519-dalek/4.1.3/test_ristretto_decode_axioms/axioms/ristretto_lemmas/lemmas/test_sqrt_ratio_matches_invsqrt_mul()": {
       "code-path": "curve25519-dalek/src/lemmas/ristretto_lemmas/axioms.rs",
       "spec-text": {
-        "lines-start": 1122,
-        "lines-end": 1166
+        "lines-start": 1116,
+        "lines-end": 1160
       },
       "kind": "exec",
       "context": "standalone",
