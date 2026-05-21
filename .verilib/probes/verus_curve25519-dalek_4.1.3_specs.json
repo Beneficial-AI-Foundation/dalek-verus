@@ -3,17 +3,17 @@
   "schema-version": "2.0",
   "tool": {
     "name": "probe-verus",
-    "version": "6.9.1",
+    "version": "6.10.0",
     "command": "specify"
   },
   "source": {
     "repo": "https://github.com/Beneficial-AI-Foundation/dalek-verus.git",
-    "commit": "d4c6a944625d7e2473899e28a5129baa05cd3080",
+    "commit": "eb1897510f571fb69cd9d74954a731ee0d548cd8",
     "language": "rust",
     "package": "curve25519-dalek",
     "package-version": "4.1.3"
   },
-  "timestamp": "2026-05-12T20:16:20Z",
+  "timestamp": "2026-05-21T16:02:47Z",
   "data": {
     "probe:curve25519-dalek/4.1.3/DalekBits#Display<&Formatter<'_>>#fmt()": {
       "code-path": "curve25519-dalek/build.rs",
@@ -26545,8 +26545,8 @@
     "probe:curve25519-dalek/4.1.3/field_specs/specs/axiom_invsqrt_factors_over_square()": {
       "code-path": "curve25519-dalek/src/specs/field_specs.rs",
       "spec-text": {
-        "lines-start": 626,
-        "lines-end": 649
+        "lines-start": 627,
+        "lines-end": 650
       },
       "kind": "proof",
       "context": "standalone",
@@ -26666,8 +26666,8 @@
     "probe:curve25519-dalek/4.1.3/field_specs/specs/fe51_is_sqrt_ratio()": {
       "code-path": "curve25519-dalek/src/specs/field_specs.rs",
       "spec-text": {
-        "lines-start": 492,
-        "lines-end": 499
+        "lines-start": 493,
+        "lines-end": 500
       },
       "kind": "spec",
       "context": "standalone",
@@ -26686,8 +26686,8 @@
     "probe:curve25519-dalek/4.1.3/field_specs/specs/fe51_is_sqrt_ratio_times_i()": {
       "code-path": "curve25519-dalek/src/specs/field_specs.rs",
       "spec-text": {
-        "lines-start": 501,
-        "lines-end": 513
+        "lines-start": 502,
+        "lines-end": 514
       },
       "kind": "spec",
       "context": "standalone",
@@ -26726,8 +26726,8 @@
     "probe:curve25519-dalek/4.1.3/field_specs/specs/field_abs()": {
       "code-path": "curve25519-dalek/src/specs/field_specs.rs",
       "spec-text": {
-        "lines-start": 520,
-        "lines-end": 528
+        "lines-start": 521,
+        "lines-end": 529
       },
       "kind": "spec",
       "context": "standalone",
@@ -26977,8 +26977,8 @@
     "probe:curve25519-dalek/4.1.3/field_specs/specs/field_sqrt()": {
       "code-path": "curve25519-dalek/src/specs/field_specs.rs",
       "spec-text": {
-        "lines-start": 328,
-        "lines-end": 337
+        "lines-start": 329,
+        "lines-end": 338
       },
       "kind": "spec",
       "context": "standalone",
@@ -27057,8 +27057,8 @@
     "probe:curve25519-dalek/4.1.3/field_specs/specs/has_inv_mod_p()": {
       "code-path": "curve25519-dalek/src/specs/field_specs.rs",
       "spec-text": {
-        "lines-start": 608,
-        "lines-end": 610
+        "lines-start": 609,
+        "lines-end": 611
       },
       "kind": "spec",
       "context": "standalone",
@@ -27077,8 +27077,8 @@
     "probe:curve25519-dalek/4.1.3/field_specs/specs/is_inv_witness()": {
       "code-path": "curve25519-dalek/src/specs/field_specs.rs",
       "spec-text": {
-        "lines-start": 613,
-        "lines-end": 615
+        "lines-start": 614,
+        "lines-end": 616
       },
       "kind": "spec",
       "context": "standalone",
@@ -27097,8 +27097,8 @@
     "probe:curve25519-dalek/4.1.3/field_specs/specs/is_inverse_field()": {
       "code-path": "curve25519-dalek/src/specs/field_specs.rs",
       "spec-text": {
-        "lines-start": 430,
-        "lines-end": 433
+        "lines-start": 431,
+        "lines-end": 434
       },
       "kind": "spec",
       "context": "standalone",
@@ -27117,8 +27117,8 @@
     "probe:curve25519-dalek/4.1.3/field_specs/specs/is_inverse_field_of_nat()": {
       "code-path": "curve25519-dalek/src/specs/field_specs.rs",
       "spec-text": {
-        "lines-start": 435,
-        "lines-end": 438
+        "lines-start": 436,
+        "lines-end": 439
       },
       "kind": "spec",
       "context": "standalone",
@@ -27137,8 +27137,8 @@
     "probe:curve25519-dalek/4.1.3/field_specs/specs/is_negative()": {
       "code-path": "curve25519-dalek/src/specs/field_specs.rs",
       "spec-text": {
-        "lines-start": 515,
-        "lines-end": 518
+        "lines-start": 516,
+        "lines-end": 519
       },
       "kind": "spec",
       "context": "standalone",
@@ -27157,8 +27157,8 @@
     "probe:curve25519-dalek/4.1.3/field_specs/specs/is_sqrt_ratio()": {
       "code-path": "curve25519-dalek/src/specs/field_specs.rs",
       "spec-text": {
-        "lines-start": 478,
-        "lines-end": 483
+        "lines-start": 479,
+        "lines-end": 484
       },
       "kind": "spec",
       "context": "standalone",
@@ -27177,8 +27177,8 @@
     "probe:curve25519-dalek/4.1.3/field_specs/specs/is_sqrt_ratio_times_i()": {
       "code-path": "curve25519-dalek/src/specs/field_specs.rs",
       "spec-text": {
-        "lines-start": 485,
-        "lines-end": 490
+        "lines-start": 486,
+        "lines-end": 491
       },
       "kind": "spec",
       "context": "standalone",
@@ -27197,8 +27197,8 @@
     "probe:curve25519-dalek/4.1.3/field_specs/specs/is_square()": {
       "code-path": "curve25519-dalek/src/specs/field_specs.rs",
       "spec-text": {
-        "lines-start": 323,
-        "lines-end": 326
+        "lines-start": 324,
+        "lines-end": 327
       },
       "kind": "spec",
       "context": "standalone",
@@ -27217,8 +27217,8 @@
     "probe:curve25519-dalek/4.1.3/field_specs/specs/is_square_of()": {
       "code-path": "curve25519-dalek/src/specs/field_specs.rs",
       "spec-text": {
-        "lines-start": 473,
-        "lines-end": 476
+        "lines-start": 474,
+        "lines-end": 477
       },
       "kind": "spec",
       "context": "standalone",
@@ -27238,7 +27238,7 @@
       "code-path": "curve25519-dalek/src/specs/field_specs.rs",
       "spec-text": {
         "lines-start": 301,
-        "lines-end": 321
+        "lines-end": 322
       },
       "kind": "proof",
       "context": "standalone",
@@ -27305,8 +27305,8 @@
     "probe:curve25519-dalek/4.1.3/field_specs/specs/nat_invsqrt()": {
       "code-path": "curve25519-dalek/src/specs/field_specs.rs",
       "spec-text": {
-        "lines-start": 530,
-        "lines-end": 562
+        "lines-start": 531,
+        "lines-end": 563
       },
       "kind": "spec",
       "context": "standalone",
@@ -27325,8 +27325,8 @@
     "probe:curve25519-dalek/4.1.3/field_specs/specs/partial_product_nonzeros()": {
       "code-path": "curve25519-dalek/src/specs/field_specs.rs",
       "spec-text": {
-        "lines-start": 452,
-        "lines-end": 471
+        "lines-start": 453,
+        "lines-end": 472
       },
       "kind": "spec",
       "context": "standalone",
@@ -27345,8 +27345,8 @@
     "probe:curve25519-dalek/4.1.3/field_specs/specs/product_of_field_elems()": {
       "code-path": "curve25519-dalek/src/specs/field_specs.rs",
       "spec-text": {
-        "lines-start": 440,
-        "lines-end": 450
+        "lines-start": 441,
+        "lines-end": 451
       },
       "kind": "spec",
       "context": "standalone",
@@ -27385,8 +27385,8 @@
     "probe:curve25519-dalek/4.1.3/field_specs/specs/spec_fe51_as_bytes()": {
       "code-path": "curve25519-dalek/src/specs/field_specs.rs",
       "spec-text": {
-        "lines-start": 364,
-        "lines-end": 428
+        "lines-start": 365,
+        "lines-end": 429
       },
       "kind": "spec",
       "context": "standalone",
@@ -27405,8 +27405,8 @@
     "probe:curve25519-dalek/4.1.3/field_specs/specs/spec_fe51_from_bytes()": {
       "code-path": "curve25519-dalek/src/specs/field_specs.rs",
       "spec-text": {
-        "lines-start": 339,
-        "lines-end": 362
+        "lines-start": 340,
+        "lines-end": 363
       },
       "kind": "spec",
       "context": "standalone",
@@ -27445,8 +27445,8 @@
     "probe:curve25519-dalek/4.1.3/field_specs/specs/sqrt_m1()": {
       "code-path": "curve25519-dalek/src/specs/field_specs.rs",
       "spec-text": {
-        "lines-start": 617,
-        "lines-end": 621
+        "lines-start": 618,
+        "lines-end": 622
       },
       "kind": "spec",
       "context": "standalone",
@@ -27465,8 +27465,8 @@
     "probe:curve25519-dalek/4.1.3/field_specs/specs/sqrt_ratio_i_bounded_post()": {
       "code-path": "curve25519-dalek/src/specs/field_specs.rs",
       "spec-text": {
-        "lines-start": 590,
-        "lines-end": 597
+        "lines-start": 591,
+        "lines-end": 598
       },
       "kind": "spec",
       "context": "standalone",
@@ -27485,8 +27485,8 @@
     "probe:curve25519-dalek/4.1.3/field_specs/specs/sqrt_ratio_i_math_post()": {
       "code-path": "curve25519-dalek/src/specs/field_specs.rs",
       "spec-text": {
-        "lines-start": 569,
-        "lines-end": 588
+        "lines-start": 570,
+        "lines-end": 589
       },
       "kind": "spec",
       "context": "standalone",
@@ -27505,8 +27505,8 @@
     "probe:curve25519-dalek/4.1.3/field_specs/specs/sqrt_ratio_i_post()": {
       "code-path": "curve25519-dalek/src/specs/field_specs.rs",
       "spec-text": {
-        "lines-start": 599,
-        "lines-end": 605
+        "lines-start": 600,
+        "lines-end": 606
       },
       "kind": "spec",
       "context": "standalone",
@@ -27565,8 +27565,8 @@
     "probe:curve25519-dalek/4.1.3/field_specs/specs/u8_32_from_nat()": {
       "code-path": "curve25519-dalek/src/specs/field_specs.rs",
       "spec-text": {
-        "lines-start": 564,
-        "lines-end": 567
+        "lines-start": 565,
+        "lines-end": 568
       },
       "kind": "spec",
       "context": "standalone",

@@ -3,17 +3,17 @@
   "schema-version": "2.0",
   "tool": {
     "name": "probe-verus",
-    "version": "6.9.1",
+    "version": "6.10.0",
     "command": "atomize"
   },
   "source": {
     "repo": "https://github.com/Beneficial-AI-Foundation/dalek-verus.git",
-    "commit": "d4c6a944625d7e2473899e28a5129baa05cd3080",
+    "commit": "eb1897510f571fb69cd9d74954a731ee0d548cd8",
     "language": "rust",
     "package": "curve25519-dalek",
     "package-version": "4.1.3"
   },
-  "timestamp": "2026-05-12T20:16:20Z",
+  "timestamp": "2026-05-21T16:02:47Z",
   "data": {
     "probe:alloc/https://github.com/rust-lang/rust/library/alloc/string/String#AsRef#as_ref()": {
       "display-name": "as_ref",
@@ -51686,7 +51686,7 @@
       "language": "rust",
       "rust-qualified-name": "curve25519_dalek::edwards::EdwardsBasepointTable::mul",
       "is-public": false,
-      "is-public-api": true,
+      "is-public-api": false,
       "has-body": true,
       "is-external": false,
       "is-cfg-gated": true
@@ -54334,7 +54334,7 @@
       "language": "rust",
       "rust-qualified-name": "curve25519_dalek::edwards::Scalar::mul",
       "is-public": false,
-      "is-public-api": true,
+      "is-public-api": false,
       "has-body": true,
       "is-external": false,
       "is-cfg-gated": true
@@ -54384,7 +54384,7 @@
       "language": "rust",
       "rust-qualified-name": "curve25519_dalek::edwards::Scalar::mul",
       "is-public": false,
-      "is-public-api": true,
+      "is-public-api": false,
       "has-body": true,
       "is-external": false,
       "is-cfg-gated": false
@@ -57548,7 +57548,7 @@
       "language": "rust",
       "rust-qualified-name": "curve25519_dalek::edwards::EdwardsPoint::is_valid",
       "is-public": false,
-      "is-public-api": true,
+      "is-public-api": false,
       "has-body": true,
       "is-external": false,
       "is-cfg-gated": false
@@ -58795,7 +58795,7 @@
       "language": "rust",
       "rust-qualified-name": "curve25519_dalek::edwards::add",
       "is-public": true,
-      "is-public-api": true,
+      "is-public-api": false,
       "has-body": true,
       "is-external": false,
       "is-cfg-gated": true
@@ -58813,7 +58813,7 @@
       "language": "rust",
       "rust-qualified-name": "curve25519_dalek::edwards::add_assign",
       "is-public": true,
-      "is-public-api": true,
+      "is-public-api": false,
       "has-body": true,
       "is-external": false,
       "is-cfg-gated": true
@@ -58885,7 +58885,7 @@
       "language": "rust",
       "rust-qualified-name": "curve25519_dalek::edwards::clear_cofactor",
       "is-public": true,
-      "is-public-api": true,
+      "is-public-api": false,
       "has-body": true,
       "is-external": false,
       "is-cfg-gated": true
@@ -58903,7 +58903,7 @@
       "language": "rust",
       "rust-qualified-name": "curve25519_dalek::edwards::deserialize",
       "is-public": true,
-      "is-public-api": true,
+      "is-public-api": false,
       "has-body": true,
       "is-external": false,
       "is-cfg-gated": true
@@ -58921,7 +58921,7 @@
       "language": "rust",
       "rust-qualified-name": "curve25519_dalek::edwards::double",
       "is-public": true,
-      "is-public-api": true,
+      "is-public-api": false,
       "has-body": true,
       "is-external": false,
       "is-cfg-gated": true
@@ -58939,7 +58939,7 @@
       "language": "rust",
       "rust-qualified-name": "curve25519_dalek::edwards::expecting",
       "is-public": true,
-      "is-public-api": true,
+      "is-public-api": false,
       "has-body": true,
       "is-external": false,
       "is-cfg-gated": true
@@ -58957,7 +58957,7 @@
       "language": "rust",
       "rust-qualified-name": "curve25519_dalek::edwards::from",
       "is-public": true,
-      "is-public-api": true,
+      "is-public-api": false,
       "has-body": true,
       "is-external": false,
       "is-cfg-gated": true
@@ -58975,7 +58975,7 @@
       "language": "rust",
       "rust-qualified-name": "curve25519_dalek::edwards::from_bytes",
       "is-public": true,
-      "is-public-api": true,
+      "is-public-api": false,
       "has-body": true,
       "is-external": false,
       "is-cfg-gated": true
@@ -58993,7 +58993,7 @@
       "language": "rust",
       "rust-qualified-name": "curve25519_dalek::edwards::from_bytes_unchecked",
       "is-public": true,
-      "is-public-api": true,
+      "is-public-api": false,
       "has-body": true,
       "is-external": false,
       "is-cfg-gated": true
@@ -59011,7 +59011,7 @@
       "language": "rust",
       "rust-qualified-name": "curve25519_dalek::edwards::generator",
       "is-public": true,
-      "is-public-api": true,
+      "is-public-api": false,
       "has-body": true,
       "is-external": false,
       "is-cfg-gated": true
@@ -59029,7 +59029,7 @@
       "language": "rust",
       "rust-qualified-name": "curve25519_dalek::edwards::identity",
       "is-public": true,
-      "is-public-api": true,
+      "is-public-api": false,
       "has-body": true,
       "is-external": false,
       "is-cfg-gated": true
@@ -59047,7 +59047,7 @@
       "language": "rust",
       "rust-qualified-name": "curve25519_dalek::edwards::into_subgroup",
       "is-public": true,
-      "is-public-api": true,
+      "is-public-api": false,
       "has-body": true,
       "is-external": false,
       "is-cfg-gated": true
@@ -59065,7 +59065,7 @@
       "language": "rust",
       "rust-qualified-name": "curve25519_dalek::edwards::is_identity",
       "is-public": true,
-      "is-public-api": true,
+      "is-public-api": false,
       "has-body": true,
       "is-external": false,
       "is-cfg-gated": true
@@ -59083,7 +59083,7 @@
       "language": "rust",
       "rust-qualified-name": "curve25519_dalek::edwards::is_torsion_free",
       "is-public": true,
-      "is-public-api": true,
+      "is-public-api": false,
       "has-body": true,
       "is-external": false,
       "is-cfg-gated": true
@@ -59101,7 +59101,7 @@
       "language": "rust",
       "rust-qualified-name": "curve25519_dalek::edwards::mul",
       "is-public": true,
-      "is-public-api": true,
+      "is-public-api": false,
       "has-body": true,
       "is-external": false,
       "is-cfg-gated": true
@@ -59119,7 +59119,7 @@
       "language": "rust",
       "rust-qualified-name": "curve25519_dalek::edwards::mul_assign",
       "is-public": true,
-      "is-public-api": true,
+      "is-public-api": false,
       "has-body": true,
       "is-external": false,
       "is-cfg-gated": true
@@ -59137,7 +59137,7 @@
       "language": "rust",
       "rust-qualified-name": "curve25519_dalek::edwards::neg",
       "is-public": true,
-      "is-public-api": true,
+      "is-public-api": false,
       "has-body": true,
       "is-external": false,
       "is-cfg-gated": true
@@ -59263,7 +59263,7 @@
       "language": "rust",
       "rust-qualified-name": "curve25519_dalek::edwards::random",
       "is-public": true,
-      "is-public-api": true,
+      "is-public-api": false,
       "has-body": true,
       "is-external": false,
       "is-cfg-gated": true
@@ -59281,7 +59281,7 @@
       "language": "rust",
       "rust-qualified-name": "curve25519_dalek::edwards::serialize",
       "is-public": true,
-      "is-public-api": true,
+      "is-public-api": false,
       "has-body": true,
       "is-external": false,
       "is-cfg-gated": true
@@ -59299,7 +59299,7 @@
       "language": "rust",
       "rust-qualified-name": "curve25519_dalek::edwards::sub",
       "is-public": true,
-      "is-public-api": true,
+      "is-public-api": false,
       "has-body": true,
       "is-external": false,
       "is-cfg-gated": true
@@ -59317,7 +59317,7 @@
       "language": "rust",
       "rust-qualified-name": "curve25519_dalek::edwards::sub_assign",
       "is-public": true,
-      "is-public-api": true,
+      "is-public-api": false,
       "has-body": true,
       "is-external": false,
       "is-cfg-gated": true
@@ -59389,7 +59389,7 @@
       "language": "rust",
       "rust-qualified-name": "curve25519_dalek::edwards::sum",
       "is-public": true,
-      "is-public-api": true,
+      "is-public-api": false,
       "has-body": true,
       "is-external": false,
       "is-cfg-gated": true
@@ -59407,7 +59407,7 @@
       "language": "rust",
       "rust-qualified-name": "curve25519_dalek::edwards::to_bytes",
       "is-public": true,
-      "is-public-api": true,
+      "is-public-api": false,
       "has-body": true,
       "is-external": false,
       "is-cfg-gated": true
@@ -59443,7 +59443,7 @@
       "language": "rust",
       "rust-qualified-name": "curve25519_dalek::edwards::visit_seq",
       "is-public": true,
-      "is-public-api": true,
+      "is-public-api": false,
       "has-body": true,
       "is-external": false,
       "is-cfg-gated": true
@@ -63953,7 +63953,7 @@
       "language": "rust",
       "rust-qualified-name": "curve25519_dalek::field::FieldElement51::ct_eq",
       "is-public": false,
-      "is-public-api": true,
+      "is-public-api": false,
       "has-body": true,
       "is-external": false,
       "is-cfg-gated": false
@@ -64013,7 +64013,7 @@
       "language": "rust",
       "rust-qualified-name": "curve25519_dalek::field::FieldElement51::eq",
       "is-public": false,
-      "is-public-api": true,
+      "is-public-api": false,
       "has-body": true,
       "is-external": false,
       "is-cfg-gated": false
@@ -77301,7 +77301,7 @@
       "code-path": "curve25519-dalek/src/specs/field_specs.rs",
       "code-text": {
         "lines-start": 639,
-        "lines-end": 649
+        "lines-end": 650
       },
       "kind": "proof",
       "language": "verus",
@@ -77415,7 +77415,7 @@
       "code-path": "curve25519-dalek/src/specs/field_specs.rs",
       "code-text": {
         "lines-start": 493,
-        "lines-end": 499
+        "lines-end": 500
       },
       "kind": "spec",
       "language": "verus",
@@ -77458,7 +77458,7 @@
       "code-path": "curve25519-dalek/src/specs/field_specs.rs",
       "code-text": {
         "lines-start": 503,
-        "lines-end": 513
+        "lines-end": 514
       },
       "kind": "spec",
       "language": "verus",
@@ -77518,7 +77518,7 @@
       "code-path": "curve25519-dalek/src/specs/field_specs.rs",
       "code-text": {
         "lines-start": 522,
-        "lines-end": 528
+        "lines-end": 529
       },
       "kind": "spec",
       "language": "verus",
@@ -78001,7 +78001,7 @@
       "code-path": "curve25519-dalek/src/specs/field_specs.rs",
       "code-text": {
         "lines-start": 332,
-        "lines-end": 337
+        "lines-end": 338
       },
       "kind": "spec",
       "language": "verus",
@@ -78133,10 +78133,10 @@
       "code-path": "curve25519-dalek/src/specs/field_specs.rs",
       "code-text": {
         "lines-start": 608,
-        "lines-end": 610
+        "lines-end": 608
       },
-      "kind": "spec",
-      "language": "verus",
+      "kind": "exec",
+      "language": "rust",
       "rust-qualified-name": "curve25519_dalek::specs::field_specs::has_inv_mod_p",
       "is-public": true,
       "is-public-api": false,
@@ -78166,10 +78166,10 @@
       "code-path": "curve25519-dalek/src/specs/field_specs.rs",
       "code-text": {
         "lines-start": 613,
-        "lines-end": 615
+        "lines-end": 613
       },
-      "kind": "spec",
-      "language": "verus",
+      "kind": "exec",
+      "language": "rust",
       "rust-qualified-name": "curve25519_dalek::specs::field_specs::is_inv_witness",
       "is-public": true,
       "is-public-api": false,
@@ -78199,7 +78199,7 @@
       "code-path": "curve25519-dalek/src/specs/field_specs.rs",
       "code-text": {
         "lines-start": 431,
-        "lines-end": 433
+        "lines-end": 434
       },
       "kind": "spec",
       "language": "verus",
@@ -78232,7 +78232,7 @@
       "code-path": "curve25519-dalek/src/specs/field_specs.rs",
       "code-text": {
         "lines-start": 436,
-        "lines-end": 438
+        "lines-end": 439
       },
       "kind": "spec",
       "language": "verus",
@@ -78259,7 +78259,7 @@
       "code-path": "curve25519-dalek/src/specs/field_specs.rs",
       "code-text": {
         "lines-start": 516,
-        "lines-end": 518
+        "lines-end": 519
       },
       "kind": "spec",
       "language": "verus",
@@ -78286,7 +78286,7 @@
       "code-path": "curve25519-dalek/src/specs/field_specs.rs",
       "code-text": {
         "lines-start": 481,
-        "lines-end": 483
+        "lines-end": 484
       },
       "kind": "spec",
       "language": "verus",
@@ -78325,7 +78325,7 @@
       "code-path": "curve25519-dalek/src/specs/field_specs.rs",
       "code-text": {
         "lines-start": 488,
-        "lines-end": 490
+        "lines-end": 491
       },
       "kind": "spec",
       "language": "verus",
@@ -78358,7 +78358,7 @@
       "code-path": "curve25519-dalek/src/specs/field_specs.rs",
       "code-text": {
         "lines-start": 324,
-        "lines-end": 326
+        "lines-end": 327
       },
       "kind": "spec",
       "language": "verus",
@@ -78391,7 +78391,7 @@
       "code-path": "curve25519-dalek/src/specs/field_specs.rs",
       "code-text": {
         "lines-start": 474,
-        "lines-end": 476
+        "lines-end": 477
       },
       "kind": "spec",
       "language": "verus",
@@ -78452,7 +78452,7 @@
       "code-path": "curve25519-dalek/src/specs/field_specs.rs",
       "code-text": {
         "lines-start": 313,
-        "lines-end": 321
+        "lines-end": 322
       },
       "kind": "proof",
       "language": "verus",
@@ -78655,7 +78655,7 @@
       "code-path": "curve25519-dalek/src/specs/field_specs.rs",
       "code-text": {
         "lines-start": 540,
-        "lines-end": 562
+        "lines-end": 563
       },
       "kind": "spec",
       "language": "verus",
@@ -78688,7 +78688,7 @@
       "code-path": "curve25519-dalek/src/specs/field_specs.rs",
       "code-text": {
         "lines-start": 455,
-        "lines-end": 471
+        "lines-end": 472
       },
       "kind": "spec",
       "language": "verus",
@@ -78733,7 +78733,7 @@
       "code-path": "curve25519-dalek/src/specs/field_specs.rs",
       "code-text": {
         "lines-start": 442,
-        "lines-end": 450
+        "lines-end": 451
       },
       "kind": "spec",
       "language": "verus",
@@ -78778,10 +78778,10 @@
       "code-path": "curve25519-dalek/src/specs/field_specs.rs",
       "code-text": {
         "lines-start": 364,
-        "lines-end": 428
+        "lines-end": 364
       },
-      "kind": "spec",
-      "language": "verus",
+      "kind": "exec",
+      "language": "rust",
       "rust-qualified-name": "curve25519_dalek::specs::field_specs::spec_fe51_as_bytes",
       "is-public": true,
       "is-public-api": false,
@@ -78825,7 +78825,7 @@
       "code-path": "curve25519-dalek/src/specs/field_specs.rs",
       "code-text": {
         "lines-start": 342,
-        "lines-end": 362
+        "lines-end": 363
       },
       "kind": "spec",
       "language": "verus",
@@ -78879,7 +78879,7 @@
       "code-path": "curve25519-dalek/src/specs/field_specs.rs",
       "code-text": {
         "lines-start": 619,
-        "lines-end": 621
+        "lines-end": 622
       },
       "kind": "spec",
       "language": "verus",
@@ -78906,7 +78906,7 @@
       "code-path": "curve25519-dalek/src/specs/field_specs.rs",
       "code-text": {
         "lines-start": 595,
-        "lines-end": 597
+        "lines-end": 598
       },
       "kind": "spec",
       "language": "verus",
@@ -78939,7 +78939,7 @@
       "code-path": "curve25519-dalek/src/specs/field_specs.rs",
       "code-text": {
         "lines-start": 576,
-        "lines-end": 588
+        "lines-end": 589
       },
       "kind": "spec",
       "language": "verus",
@@ -78972,7 +78972,7 @@
       "code-path": "curve25519-dalek/src/specs/field_specs.rs",
       "code-text": {
         "lines-start": 603,
-        "lines-end": 605
+        "lines-end": 606
       },
       "kind": "spec",
       "language": "verus",
@@ -79041,7 +79041,7 @@
       "code-path": "curve25519-dalek/src/specs/field_specs.rs",
       "code-text": {
         "lines-start": 565,
-        "lines-end": 567
+        "lines-end": 568
       },
       "kind": "spec",
       "language": "verus",
@@ -95108,7 +95108,7 @@
       "language": "rust",
       "rust-qualified-name": "curve25519_dalek::lizard::lizard_ristretto::RistrettoPoint::elligator_ristretto_flavor_inverse",
       "is-public": true,
-      "is-public-api": true,
+      "is-public-api": false,
       "has-body": true,
       "is-external": false,
       "is-cfg-gated": true
@@ -95215,7 +95215,7 @@
       "language": "rust",
       "rust-qualified-name": "curve25519_dalek::lizard::lizard_ristretto::RistrettoPoint::decode_253_bits",
       "is-public": true,
-      "is-public-api": true,
+      "is-public-api": false,
       "has-body": true,
       "is-external": false,
       "is-cfg-gated": true
@@ -95289,7 +95289,7 @@
       "language": "rust",
       "rust-qualified-name": "curve25519_dalek::lizard::lizard_ristretto::RistrettoPoint::lizard_decode",
       "is-public": true,
-      "is-public-api": true,
+      "is-public-api": false,
       "has-body": true,
       "is-external": true,
       "is-cfg-gated": true
@@ -95586,7 +95586,7 @@
       "language": "rust",
       "rust-qualified-name": "curve25519_dalek::lizard::lizard_ristretto::RistrettoPoint::lizard_decode_verus",
       "is-public": true,
-      "is-public-api": true,
+      "is-public-api": false,
       "has-body": true,
       "is-external": false,
       "is-cfg-gated": true
@@ -95702,7 +95702,7 @@
       "language": "rust",
       "rust-qualified-name": "curve25519_dalek::lizard::lizard_ristretto::RistrettoPoint::xcoset4",
       "is-public": true,
-      "is-public-api": true,
+      "is-public-api": false,
       "has-body": true,
       "is-external": false,
       "is-cfg-gated": true
@@ -96422,7 +96422,7 @@
       "language": "rust",
       "rust-qualified-name": "curve25519_dalek::lizard::lizard_ristretto::RistrettoPoint::lizard_encode",
       "is-public": true,
-      "is-public-api": true,
+      "is-public-api": false,
       "has-body": true,
       "is-external": true,
       "is-cfg-gated": true
@@ -96533,7 +96533,7 @@
       "language": "rust",
       "rust-qualified-name": "curve25519_dalek::lizard::lizard_ristretto::RistrettoPoint::lizard_encode_verus",
       "is-public": true,
-      "is-public-api": true,
+      "is-public-api": false,
       "has-body": true,
       "is-external": false,
       "is-cfg-gated": true
@@ -96667,7 +96667,7 @@
       "language": "rust",
       "rust-qualified-name": "curve25519_dalek::lizard::lizard_ristretto::RistrettoPoint::encode_253_bits",
       "is-public": true,
-      "is-public-api": true,
+      "is-public-api": false,
       "has-body": true,
       "is-external": false,
       "is-cfg-gated": true
@@ -96784,7 +96784,7 @@
       "language": "rust",
       "rust-qualified-name": "curve25519_dalek::lizard::lizard_ristretto::RistrettoPoint::from_uniform_bytes_single_elligator",
       "is-public": true,
-      "is-public-api": true,
+      "is-public-api": false,
       "has-body": true,
       "is-external": false,
       "is-cfg-gated": true
@@ -103730,7 +103730,7 @@
       "language": "rust",
       "rust-qualified-name": "curve25519_dalek::montgomery::Scalar::mul",
       "is-public": false,
-      "is-public-api": true,
+      "is-public-api": false,
       "has-body": true,
       "is-external": false,
       "is-cfg-gated": false
@@ -153523,7 +153523,7 @@
       "language": "rust",
       "rust-qualified-name": "curve25519_dalek::ristretto::RistrettoBasepointTable::mul",
       "is-public": false,
-      "is-public-api": true,
+      "is-public-api": false,
       "has-body": true,
       "is-external": false,
       "is-cfg-gated": true
@@ -154750,7 +154750,7 @@
       "language": "rust",
       "rust-qualified-name": "curve25519_dalek::ristretto::Scalar::mul",
       "is-public": false,
-      "is-public-api": true,
+      "is-public-api": false,
       "has-body": true,
       "is-external": false,
       "is-cfg-gated": true
@@ -154800,7 +154800,7 @@
       "language": "rust",
       "rust-qualified-name": "curve25519_dalek::ristretto::Scalar::mul",
       "is-public": false,
-      "is-public-api": true,
+      "is-public-api": false,
       "has-body": true,
       "is-external": false,
       "is-cfg-gated": false
@@ -156613,7 +156613,7 @@
       "language": "rust",
       "rust-qualified-name": "curve25519_dalek::ristretto::RistrettoPoint::random",
       "is-public": true,
-      "is-public-api": true,
+      "is-public-api": false,
       "has-body": true,
       "is-external": false,
       "is-cfg-gated": true
@@ -160068,7 +160068,7 @@
       "language": "rust",
       "rust-qualified-name": "curve25519_dalek::ristretto::clear_cofactor",
       "is-public": true,
-      "is-public-api": true,
+      "is-public-api": false,
       "has-body": true,
       "is-external": false,
       "is-cfg-gated": true
@@ -160086,7 +160086,7 @@
       "language": "rust",
       "rust-qualified-name": "curve25519_dalek::ristretto::deserialize",
       "is-public": true,
-      "is-public-api": true,
+      "is-public-api": false,
       "has-body": true,
       "is-external": false,
       "is-cfg-gated": true
@@ -160104,7 +160104,7 @@
       "language": "rust",
       "rust-qualified-name": "curve25519_dalek::ristretto::double",
       "is-public": true,
-      "is-public-api": true,
+      "is-public-api": false,
       "has-body": true,
       "is-external": false,
       "is-cfg-gated": true
@@ -160122,7 +160122,7 @@
       "language": "rust",
       "rust-qualified-name": "curve25519_dalek::ristretto::expecting",
       "is-public": true,
-      "is-public-api": true,
+      "is-public-api": false,
       "has-body": true,
       "is-external": false,
       "is-cfg-gated": true
@@ -160140,7 +160140,7 @@
       "language": "rust",
       "rust-qualified-name": "curve25519_dalek::ristretto::from_bytes",
       "is-public": true,
-      "is-public-api": true,
+      "is-public-api": false,
       "has-body": true,
       "is-external": false,
       "is-cfg-gated": true
@@ -160158,7 +160158,7 @@
       "language": "rust",
       "rust-qualified-name": "curve25519_dalek::ristretto::from_bytes_unchecked",
       "is-public": true,
-      "is-public-api": true,
+      "is-public-api": false,
       "has-body": true,
       "is-external": false,
       "is-cfg-gated": true
@@ -160176,7 +160176,7 @@
       "language": "rust",
       "rust-qualified-name": "curve25519_dalek::ristretto::generator",
       "is-public": true,
-      "is-public-api": true,
+      "is-public-api": false,
       "has-body": true,
       "is-external": false,
       "is-cfg-gated": true
@@ -160194,7 +160194,7 @@
       "language": "rust",
       "rust-qualified-name": "curve25519_dalek::ristretto::identity",
       "is-public": true,
-      "is-public-api": true,
+      "is-public-api": false,
       "has-body": true,
       "is-external": false,
       "is-cfg-gated": true
@@ -160212,7 +160212,7 @@
       "language": "rust",
       "rust-qualified-name": "curve25519_dalek::ristretto::into_subgroup",
       "is-public": true,
-      "is-public-api": true,
+      "is-public-api": false,
       "has-body": true,
       "is-external": false,
       "is-cfg-gated": true
@@ -160230,7 +160230,7 @@
       "language": "rust",
       "rust-qualified-name": "curve25519_dalek::ristretto::is_identity",
       "is-public": true,
-      "is-public-api": true,
+      "is-public-api": false,
       "has-body": true,
       "is-external": false,
       "is-cfg-gated": true
@@ -160248,7 +160248,7 @@
       "language": "rust",
       "rust-qualified-name": "curve25519_dalek::ristretto::is_torsion_free",
       "is-public": true,
-      "is-public-api": true,
+      "is-public-api": false,
       "has-body": true,
       "is-external": false,
       "is-cfg-gated": true
@@ -160320,7 +160320,7 @@
       "language": "rust",
       "rust-qualified-name": "curve25519_dalek::ristretto::random",
       "is-public": true,
-      "is-public-api": true,
+      "is-public-api": false,
       "has-body": true,
       "is-external": false,
       "is-cfg-gated": true
@@ -160338,7 +160338,7 @@
       "language": "rust",
       "rust-qualified-name": "curve25519_dalek::ristretto::serialize",
       "is-public": true,
-      "is-public-api": true,
+      "is-public-api": false,
       "has-body": true,
       "is-external": false,
       "is-cfg-gated": true
@@ -160356,7 +160356,7 @@
       "language": "rust",
       "rust-qualified-name": "curve25519_dalek::ristretto::to_bytes",
       "is-public": true,
-      "is-public-api": true,
+      "is-public-api": false,
       "has-body": true,
       "is-external": false,
       "is-cfg-gated": true
@@ -160446,7 +160446,7 @@
       "language": "rust",
       "rust-qualified-name": "curve25519_dalek::ristretto::visit_seq",
       "is-public": true,
-      "is-public-api": true,
+      "is-public-api": false,
       "has-body": true,
       "is-external": false,
       "is-cfg-gated": true
@@ -164752,7 +164752,7 @@
       "language": "rust",
       "rust-qualified-name": "curve25519_dalek::scalar::Scalar52::invert",
       "is-public": true,
-      "is-public-api": true,
+      "is-public-api": false,
       "has-body": true,
       "is-external": false,
       "is-cfg-gated": false
@@ -166138,7 +166138,7 @@
       "language": "rust",
       "rust-qualified-name": "curve25519_dalek::scalar::Scalar52::montgomery_invert",
       "is-public": true,
-      "is-public-api": true,
+      "is-public-api": false,
       "has-body": true,
       "is-external": false,
       "is-cfg-gated": false
@@ -167156,7 +167156,7 @@
       "language": "rust",
       "rust-qualified-name": "curve25519_dalek::scalar::Scalar::random",
       "is-public": true,
-      "is-public-api": true,
+      "is-public-api": false,
       "has-body": true,
       "is-external": false,
       "is-cfg-gated": true
@@ -168755,7 +168755,7 @@
       "language": "rust",
       "rust-qualified-name": "curve25519_dalek::scalar::char_le_bits",
       "is-public": true,
-      "is-public-api": true,
+      "is-public-api": false,
       "has-body": true,
       "is-external": false,
       "is-cfg-gated": true
@@ -168806,7 +168806,7 @@
       "language": "rust",
       "rust-qualified-name": "curve25519_dalek::scalar::deserialize",
       "is-public": true,
-      "is-public-api": true,
+      "is-public-api": false,
       "has-body": true,
       "is-external": false,
       "is-cfg-gated": true
@@ -168824,7 +168824,7 @@
       "language": "rust",
       "rust-qualified-name": "curve25519_dalek::scalar::double",
       "is-public": true,
-      "is-public-api": true,
+      "is-public-api": false,
       "has-body": true,
       "is-external": false,
       "is-cfg-gated": true
@@ -168842,7 +168842,7 @@
       "language": "rust",
       "rust-qualified-name": "curve25519_dalek::scalar::expecting",
       "is-public": true,
-      "is-public-api": true,
+      "is-public-api": false,
       "has-body": true,
       "is-external": false,
       "is-cfg-gated": true
@@ -168860,7 +168860,7 @@
       "language": "rust",
       "rust-qualified-name": "curve25519_dalek::scalar::from_bits",
       "is-public": true,
-      "is-public-api": true,
+      "is-public-api": false,
       "has-body": true,
       "is-external": false,
       "is-cfg-gated": true
@@ -168878,7 +168878,7 @@
       "language": "rust",
       "rust-qualified-name": "curve25519_dalek::scalar::from_repr",
       "is-public": true,
-      "is-public-api": true,
+      "is-public-api": false,
       "has-body": true,
       "is-external": false,
       "is-cfg-gated": true
@@ -168896,7 +168896,7 @@
       "language": "rust",
       "rust-qualified-name": "curve25519_dalek::scalar::from_repr_vartime",
       "is-public": true,
-      "is-public-api": true,
+      "is-public-api": false,
       "has-body": true,
       "is-external": false,
       "is-cfg-gated": true
@@ -168914,7 +168914,7 @@
       "language": "rust",
       "rust-qualified-name": "curve25519_dalek::scalar::from_uniform_bytes",
       "is-public": true,
-      "is-public-api": true,
+      "is-public-api": false,
       "has-body": true,
       "is-external": false,
       "is-cfg-gated": true
@@ -168932,7 +168932,7 @@
       "language": "rust",
       "rust-qualified-name": "curve25519_dalek::scalar::invert",
       "is-public": true,
-      "is-public-api": true,
+      "is-public-api": false,
       "has-body": true,
       "is-external": false,
       "is-cfg-gated": true
@@ -168968,7 +168968,7 @@
       "language": "rust",
       "rust-qualified-name": "curve25519_dalek::scalar::is_odd",
       "is-public": true,
-      "is-public-api": true,
+      "is-public-api": false,
       "has-body": true,
       "is-external": false,
       "is-cfg-gated": true
@@ -169157,7 +169157,7 @@
       "language": "rust",
       "rust-qualified-name": "curve25519_dalek::scalar::random",
       "is-public": true,
-      "is-public-api": true,
+      "is-public-api": false,
       "has-body": true,
       "is-external": false,
       "is-cfg-gated": true
@@ -169253,7 +169253,7 @@
       "language": "rust",
       "rust-qualified-name": "curve25519_dalek::scalar::serialize",
       "is-public": true,
-      "is-public-api": true,
+      "is-public-api": false,
       "has-body": true,
       "is-external": false,
       "is-cfg-gated": true
@@ -169271,7 +169271,7 @@
       "language": "rust",
       "rust-qualified-name": "curve25519_dalek::scalar::sqrt",
       "is-public": true,
-      "is-public-api": true,
+      "is-public-api": false,
       "has-body": true,
       "is-external": false,
       "is-cfg-gated": true
@@ -169289,7 +169289,7 @@
       "language": "rust",
       "rust-qualified-name": "curve25519_dalek::scalar::sqrt_ratio",
       "is-public": true,
-      "is-public-api": true,
+      "is-public-api": false,
       "has-body": true,
       "is-external": false,
       "is-cfg-gated": true
@@ -169307,7 +169307,7 @@
       "language": "rust",
       "rust-qualified-name": "curve25519_dalek::scalar::square",
       "is-public": true,
-      "is-public-api": true,
+      "is-public-api": false,
       "has-body": true,
       "is-external": false,
       "is-cfg-gated": true
@@ -169721,7 +169721,7 @@
       "language": "rust",
       "rust-qualified-name": "curve25519_dalek::scalar::to_le_bits",
       "is-public": true,
-      "is-public-api": true,
+      "is-public-api": false,
       "has-body": true,
       "is-external": false,
       "is-cfg-gated": true
@@ -169739,7 +169739,7 @@
       "language": "rust",
       "rust-qualified-name": "curve25519_dalek::scalar::to_repr",
       "is-public": true,
-      "is-public-api": true,
+      "is-public-api": false,
       "has-body": true,
       "is-external": false,
       "is-cfg-gated": true
@@ -173453,7 +173453,7 @@
       "language": "rust",
       "rust-qualified-name": "curve25519_dalek::scalar::visit_seq",
       "is-public": true,
-      "is-public-api": true,
+      "is-public-api": false,
       "has-body": true,
       "is-external": false,
       "is-cfg-gated": true
@@ -212187,7 +212187,7 @@
       "language": "rust",
       "rust-qualified-name": "curve25519_dalek::traits::Self::mul_base_clamped",
       "is-public": true,
-      "is-public-api": true,
+      "is-public-api": false,
       "has-body": true,
       "is-external": false,
       "is-cfg-gated": false
@@ -212232,7 +212232,7 @@
       "language": "rust",
       "rust-qualified-name": "curve25519_dalek::traits::Self::vartime_mixed_multiscalar_mul",
       "is-public": true,
-      "is-public-api": true,
+      "is-public-api": false,
       "has-body": true,
       "is-external": false,
       "is-cfg-gated": false
@@ -212270,7 +212270,7 @@
       "language": "rust",
       "rust-qualified-name": "curve25519_dalek::traits::Self::vartime_multiscalar_mul",
       "is-public": true,
-      "is-public-api": true,
+      "is-public-api": false,
       "has-body": true,
       "is-external": false,
       "is-cfg-gated": false
@@ -212339,7 +212339,7 @@
       "language": "rust",
       "rust-qualified-name": "curve25519_dalek::traits::CompressedEdwardsY::is_identity",
       "is-public": false,
-      "is-public-api": true,
+      "is-public-api": false,
       "has-body": true,
       "is-external": false,
       "is-cfg-gated": false
@@ -212402,7 +212402,7 @@
       "language": "rust",
       "rust-qualified-name": "curve25519_dalek::traits::EdwardsPoint::is_identity",
       "is-public": false,
-      "is-public-api": true,
+      "is-public-api": false,
       "has-body": true,
       "is-external": false,
       "is-cfg-gated": false
@@ -212492,7 +212492,7 @@
       "language": "rust",
       "rust-qualified-name": "curve25519_dalek::traits::MontgomeryPoint::is_identity",
       "is-public": false,
-      "is-public-api": true,
+      "is-public-api": false,
       "has-body": true,
       "is-external": false,
       "is-cfg-gated": false
